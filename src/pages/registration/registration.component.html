@@ -1,11 +1,74 @@
 <div id="Auth">
-    <h1 id="first">Créez votre compte en quelques clics!</h1>
-    <h2 id="second">L’Espace Client de RMA est un espace sécurisé qui permet d’accéder aux Espaces Santé, Epargne et Automobile via un seul identifiant de connexion.</h2>
-     
+  <button type="submit" class="back-btn">Revenir au site</button>
+    <h1 id="first">Créez votre compte<br> en quelques clics!</h1>
+    <h4 id="second">L’Espace Client de RMA est un espace sécurisé qui permet <br>d’accéder aux Espaces Santé, Epargne et Automobile via un <br> seul identifiant de connexion.</h4>
+     <div class="form">
               
     <input required type="text" name="Nom"   class="input-field" placeholder="Nom*" [(ngModel)]="nom"/><br />
+    <input required type="text" name="Prenom"   class="input-field" placeholder="Prenom*" [(ngModel)]="prenom"/><br />           
+    <input type="text" name="numTelephone" [(ngModel)]="numTelephone" placeholder="Numéro de téléphone" class="input-field"><br /> 
+    
+    <input required type="text" name="birthday"  [(ngModel)]="birthdayday" class="input-field1" placeholder="Jour*" />
                 
-    
-    
-  </div>
+                    
+                <select name="mois" placeholder="jour*" class="input-field2">
+                    <option value="1">Janvier</option>
+                    <option value="2">Février</option>
+                    <option value="3">Mars</option>
+                    <option value="4">Avril</option>
+                    <option value="5">Mai</option>
+                    <option value="6">Juin</option>
+                    <option value="7">Juillet</option>
+                    <option value="8">Août</option>
+                    <option value="9">Septembre</option>
+                    <option value="10">Octobre</option>
+                    <option value="11">Novembre</option>
+                    <option value="12">Décembre</option>
+                </select>
+          
+
+                <input required type="text" name="birthday"  [(ngModel)]="birthdayyear" class="input-field3"
+                    placeholder="Année*" /><br />
+
+                   <input required type="text" name="Email" [(ngModel)]="Email" class="input-field" placeholder="Email*"/><br />
+                  
+                   @if (!ispasswordValid) {
+                      <p>Les mots de passe ne sont pas identiques</p>
+                    } 
+                    <!-- @else {
+                      <p>Les mots de passe  sont  identiques</p>
+                    } -->
+                 
+                   <input required type="text" name="Mot de passe" [(ngModel)]="password" class="input-field"   placeholder="Mot de passe*"/><br />
+                   
+                    <input required  type="text"  name="Mot de passe" [(ngModel)]="confirmPassword" class="input-field"   placeholder="Je confirme mon mot de passe *"  />
+
+                    
+                    <!-- <div *ngIf="!ispasswordValid" class="error-message">
+                      Les mots de passe ne sont pas identiques
+                    </div>2
+                    <input required type="{{ hide ? 'password' : 'text' }}" name="Mot de passe" [(ngModel)]="password" class="input-field" [ngClass]="{'error': !ispasswordValid}"  placeholder="Mot de passe*"/>
+                    <div class="password-input-container1">
+                      <input required  type="{{ hide ? 'password' : 'text' }}"  name="Mot de passe" [(ngModel)]="confirmPassword" class="input-field"  [ngClass]="{'error': !ispasswordValid}"   placeholder="Je confirme mon mot de passe *"  />
+  -->
+  
+  
+  <!-- <div *ngIf="!ispasswordValid" class="error-message">
+                      Les mots de passe ne sont pas identiques
+                    </div> -->
+                  </div>
+                    <h6 id="sec">(*) Champs obligatoires</h6>
+                <button type="submit" class="join-btn">Créer mon compte</button>
+                @if (allFieldsFilled){
+                  <p>!! Veuillez remplir tous les champs obligatoires.</p>
+                } 
+                   
+                <div id="Signin">
+                  <button type="submit" class="join-btn2"><a routerLink="/login">Vous avez déja un compte ?</a></button>
+          
+              </div>
+
+
+
+                  </div>
   

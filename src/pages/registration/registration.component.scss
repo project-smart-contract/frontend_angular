@@ -1,0 +1,115 @@
+#Auth {
+    background: url('../../assets/assuranceimg.jpg'); 
+    background-size: 100% 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    border: 1px solid #FFFFFF;
+  }
+  #first, #second {
+    color: #fff;
+    text-align: left;
+    // position: relative;
+    bottom: -250px;
+    left: 20px;
+  }
+ 
+.input-field {
+    width: 40%;
+    height: 40px;
+    border-radius: 5px;
+   // border: 1px solid #ccc;
+border: 1px solid #ebebeb;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+color: #1d2a5c;
+margin-left: 650px;
+ }
+ .input-field:focus {
+    border: 2px  #fff;
+    background-color: none;
+    box-shadow: 0 0 50px #1d2a5c;
+  }
+  
+  
+  .input-field1 {
+    margin-bottom: 1px; /* Ajustez la valeur de l'espace entre les cases */
+	width: 10%;
+	 padding: 14px 12px;
+	border: 1px solid #676767;
+	border-radius: 4px;
+	box-shadow: none;
+	font: inherit;
+	color: #636363;
+	font-size: 20px;
+    margin-left: 650px; 
+    margin-top: 15px; 
+    margin-right: -150px;
+
+}
+.input-field2 {
+	margin-bottom: 1px; /* Ajustez la valeur de l'espace entre les cases */
+    	width: 10%;
+	padding: 14px 12px;
+	border: 1px solid #636363;
+	border-radius: 4px;
+	box-shadow: none;
+	font: inherit;
+	color: #636363;
+	font-size: 20px;
+    margin-left: 200px; 
+    margin-right: -150px;
+}
+.input-field3 {
+    margin-bottom: 1px; /* Ajustez la valeur de l'espace entre les cases */
+	width: 10%;
+	 padding: 14px 12px;
+	border: 1px solid #676767;
+	border-radius: 4px;
+	box-shadow: none;
+	font: inherit;
+	color: #636363;
+	font-size: 20px;
+    margin-left: 200px; 
+    margin-top: 15px; 
+    margin-right: -150px;
+
+}
+  
+ 
+  
+  .input-field:focus {
+    outline: none;
+    border-color: #000;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .join-btn {
+    margin-top: 20px;
+    color: #fff;
+    border: none;
+    padding: 15px 35px;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 35px;
+    background: #00968c;
+    margin-left: 650px;
+  }
+  
+  .join-btn:hover {
+    background-color: #000000;
+  }
+  
+  .back-btn{
+    color:#070707;
+    font-size: 18px;
+    background: none;
+    border-color: none;
+    margin-left: 1100px;
+  }

@@ -1,5 +1,7 @@
 <div class="home-whole-container">
-  <div class="left-blue-bloc">
+  <div class="clouds"></div>
+  <!-- BLUE block -->
+  <div class="left-blue-block">
     <div class="home-logo">LOGO</div>
     <div class="home-intro-h1">
       Découvrir l'assurance dans un monde qui change.
@@ -26,19 +28,37 @@
       </li>
       <li class="home-links-li">
         <a href="#" class="home-links-a">
-          <img [src]="imgDiamondEmpty" alt="diamond-icon" class="diamond-icon" />
+          <img
+            [src]="imgDiamondEmpty"
+            alt="diamond-icon"
+            class="diamond-icon"
+          />
           Mentions légales
         </a>
       </li>
       <li class="home-links-li">
         <a href="#" class="home-links-a">
-          <fa-icon [icon]="faCircleInfo" class="faCircleInfo"></fa-icon> À propos de
-          nous
+          <fa-icon [icon]="faCircleInfo" class="faCircleInfo"></fa-icon> À
+          propos de nous
         </a>
       </li>
     </ul>
   </div>
-  <div class="middle-yellow-bloc"><span class="space">espaces clients</span></div>
-  <div class="right-white-bloc">TEST 3</div>
+  <!-- YELLOW block -->
+  <div class="middle-yellow-block">
+    <h5 class="yellow-block-h5">espaces clients</h5>
+    <span class="home-login-span">Déjà client ?<br />Connectez-vous !</span>
+    <br />
+    <a href="#" class="home-login-route"> se connecter </a>
+  </div>
+  <!-- WHITE block -->
+  <div class="right-white-block">
+    <h5 class="white-block-h5">espaces clients</h5>
+    <span class="home-signup-span"
+      >Vous n'avez pas un compte ?<br />Créer un !</span
+    >
+    <br />
+    <a href="#" class="home-signup-route"> créer un compte </a>
+  </div>
 </div>
 <!-- <FontAwesomeIcon icon="fa-regular fa-user" style={{color: "#ffffff",}} /> -->

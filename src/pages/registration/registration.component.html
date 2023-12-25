@@ -5,6 +5,8 @@
      <div class="form">
               
     <input required type="text" name="Nom"   class="input-field" placeholder="Nom*" [(ngModel)]="nom"/><br />
+    <!-- <span class="err" @if(!nom)>*Ce champ est requis</span><br /> -->
+    <!-- <span class="err" @if(!nom &&nom == null)>*Ce champ est requis</span><br /> -->
     <input required type="text" name="Prenom"   class="input-field" placeholder="Prenom*" [(ngModel)]="prenom"/><br />           
     <input type="text" name="numTelephone" [(ngModel)]="numTelephone" placeholder="Numéro de téléphone" class="input-field"><br /> 
     
@@ -38,10 +40,17 @@
                     <!-- @else {
                       <p>Les mots de passe  sont  identiques</p>
                     } -->
-                 
+                    <div class="password-input-container">
                    <input required type="text" name="Mot de passe" [(ngModel)]="password" class="input-field"   placeholder="Mot de passe*"/><br />
-                   
+                   <!-- <img src="../../assets/yeux-barré.jpg" alt="Image d'œil barré" @if(hide) (click)="togglePasswordVisibility()"  class="fas fa-eye1"> -->
+                   <img src="assets/yeux.png" alt="Image d'œil" @if(!hide) (click)="togglePasswordVisibility()"  class="fas fa-eye">
+                     
+                    </div>
+                    <div class="password-input-container1">
                     <input required  type="text"  name="Mot de passe" [(ngModel)]="confirmPassword" class="input-field"   placeholder="Je confirme mon mot de passe *"  />
+                    <!-- <img src="assets/yeux-barré.jpg" alt="Image d'œil barré" *ngIf="hide" (click)="togglePasswordVisibility()"  class="fas fa-eye1"> -->
+                    <img src="assets/yeux.png" alt="Image d'œil" @if(!hide) (click)="togglePasswordVisibility()"  class="fas fa-eye">
+                  </div>
 
                     
                     <!-- <div *ngIf="!ispasswordValid" class="error-message">

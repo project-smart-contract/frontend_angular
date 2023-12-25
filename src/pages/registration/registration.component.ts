@@ -18,7 +18,7 @@ export class RegistrationComponent {
   birthdayday: string = '';
   birthdayyear: string = '';
   numTelephone: string = ''; 
-  // hide: boolean = true;
+  hide: boolean = true;
   Email: string = '';
   isEmailValid = true;
   password: string = '';
@@ -69,6 +69,8 @@ this.isEmailValid = true;
   this.allFieldsFilled = false;
   this.responseErrorMessage = '';
  }
- 
+ togglePasswordVisibility() {
+  this.hide = !this.hide;
+}
 
 }

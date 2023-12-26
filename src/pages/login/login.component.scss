@@ -1,0 +1,110 @@
+#login {
+    background: url('/assets/assuranceimg1.jpg'); 
+    background-size: 100% 100%;
+    // background-color: rgba(0, 0, 0, 0.5);
+    // z-index: 1;
+    border: 1px solid #FFFFFF;
+  }
+
+  #first {
+    font-family: 'Titillium-Light', sans-serif;
+    color: #00968c;
+    font-size: 48px;
+    margin: 190px 0 30px 0;
+    line-height: 48px;
+    position: absolute;
+  }
+   #second{
+
+    font-family: 'Titillium-Regular', sans-serif;
+    color: #00968c;
+    font-size: 16px;
+    margin: 320px 0 30px 0;
+    line-height: 22px;
+    position: absolute;
+   }
+   #sec {
+    padding: 10px 0 10px;
+	color: #0f0f10;
+	font-size: 15px;
+	font-weight: 700;
+    margin-left: 650px;
+
+
+}
+
+  .input-field {
+    width: 40%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ebebeb;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+    color: #1d2a5c;
+    margin-left: 650px;
+    font-size: 20px;
+}
+
+.input-field:focus {
+    border: 2px solid #fff; /* Ajout de "solid" pour spécifier le type de bordure */
+    background-color: transparent; /* Utilisation de "transparent" au lieu de "none" */
+    box-shadow: 0 0 50px #1d2a5c;
+}
+
+
+.join-btn {
+    margin-top: 0px;
+    color: #fff;
+    border: none;
+    padding: 15px 35px;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 35px;
+    background: #00968c;
+    margin-left: 650px;
+  }
+  .join-btn:hover {
+    background-color: #000000;
+  }
+  .back-btn{
+    color:#070707;
+    font-size: 18px;
+  
+    // border-color: none;
+    margin-left: 1100px;
+    border: 1px solid transparent;
+  
+    background-color: transparent;
+  }
+
+
+  .password-input-container {
+    position: relative;
+    }
+    
+    .password-input-container .fas.fa-eye {
+    position: absolute;
+    top: 50%;
+    // right: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    left: 1150px
+    }
+    .join-btn2 {
+        color: #060606;
+        // position: relative;
+        padding: 12px 24px;
+        font-size: 18px;
+        line-height: 100%;
+        text-decoration: none;
+          text-align: center;
+        margin-top: 0px;
+        border: 1px solid transparent;
+        // margin-right: 70px;
+        margin-left: 960px;
+        background-color: transparent;
+      
+      
+           }

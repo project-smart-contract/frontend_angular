@@ -1,8 +1,8 @@
 #Auth {
-    background: url('../../assets/assuranceimg1.jpg'); 
+    background: url('/assets/assuranceimg.jpg'); 
     background-size: 100% 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
+    // background-color: rgba(0, 0, 0, 0.5);
+    // z-index: 1;
     border: 1px solid #FFFFFF;
   }
 
@@ -128,11 +128,7 @@
     border-color: #000;
   }
   
-  .error-message {
-    color: red;
-    font-size: 12px;
-    font-weight: bold;
-  }
+ 
   
   .join-btn {
     margin-top: 0px;

@@ -1,0 +1,26 @@
+<div id="login">
+    <button type="submit" class="back-btn">Revenir au site</button>
+      <h1 id="first">Créez votre compte<br> en quelques clics!</h1>
+      <h4 id="second">L’Espace Client de RMA est un espace sécurisé qui permet <br>d’accéder aux Espaces Santé, Epargne et Automobile via un <br> seul identifiant de connexion.</h4>
+
+      <div class="form">
+        <input required type="text" name="Email" [(ngModel)]="Email" class="input-field" placeholder="Email*"/><br />
+        <div class="password-input-container">
+            <input required type="text" name="Mot de passe" [(ngModel)]="password" class="input-field"   placeholder="Mot de passe*"/><br />
+            <!-- <img src="../../assets/yeux-barré.jpg" alt="Image d'œil barré" @if(hide) (click)="togglePasswordVisibility()"  class="fas fa-eye1"> -->
+            <img src="assets/yeux.png" alt="Image d'œil" @if(!hide) (click)="togglePasswordVisibility()"  class="fas fa-eye">
+              
+             </div>
+
+
+             <h6 id="sec">(*) Champs obligatoires</h6>
+             <button type="submit" class="join-btn">Se connecter</button>
+             @if (allFieldsFilled){
+               <p>!! Veuillez remplir tous les champs obligatoires.</p>
+             } 
+                
+             <div id="Signin">
+               <button type="submit" class="join-btn2"><a routerLink="/register">Nouveau client ?Créez votre compte</a></button>
+       
+           </div>
+      </div>

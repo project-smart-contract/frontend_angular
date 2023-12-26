@@ -6,11 +6,12 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule } from '@angular/forms';
+import { FooterComponent } from '../../component/footer/footer.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [FormsModule, FontAwesomeModule],
+  imports: [FormsModule, FontAwesomeModule, FooterComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })

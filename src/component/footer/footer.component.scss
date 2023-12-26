@@ -1,0 +1,47 @@
+.footer {
+  background-color: #f5f5f5;
+  //   padding: 20px;
+  text-align: center;
+  //   font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+}
+
+.faTwitter,
+.faFacebook,
+.faInstagram,
+.faYoutube,
+.faEnvelope,
+.faBookmark {
+  font-size: 16px;
+  padding: 10px;
+  color: #9f9f9f;
+  transition: 0.3s;
+}
+
+.footer-left-li {
+  display: flex;
+  align-items: center;
+}
+
+.footer-left-block,
+.footer-right-block {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer-span {
+  font-size: 16px;
+  color: #363636;
+}
+
+.newsletter {
+  margin-right: 0.5rem;
+}
+
+.newsletter:hover {
+  border-bottom: 2px solid #363636;
+  //   transition: all 0.5s ease-in-out;
+}

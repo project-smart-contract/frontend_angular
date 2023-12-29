@@ -1,9 +1,12 @@
 #Auth {
-    background: url('/assets/assuranceimg.jpg'); 
-    background-size: 100% 100%;
+    background: url('/assets/assurance.svg'), url('/assets/assuranceimg1.jpg'); 
+   
+    // background-size: 100% 100%;
     // background-color: rgba(0, 0, 0, 0.5);
     // z-index: 1;
     border: 1px solid #FFFFFF;
+    position: relative;
+    background-size: cover;
   }
 
   .err{
@@ -32,20 +35,22 @@
   }
   #first {
     font-family: 'Titillium-Light', sans-serif;
-    color: #00968c;
+    color: #fafafa;
     font-size: 48px;
     margin: 190px 0 30px 0;
     line-height: 48px;
     position: absolute;
+    padding: 30px;
   }
    #second{
 
     font-family: 'Titillium-Regular', sans-serif;
-    color: #00968c;
+    color: #fafafa;
     font-size: 16px;
     margin: 320px 0 30px 0;
     line-height: 22px;
     position: absolute;
+    padding: 30px;
    }
    #sec {
     padding: 10px 0 10px;
@@ -200,8 +205,14 @@
     margin-top: 0px;
     border: 1px solid transparent;
     // margin-right: 70px;
-    margin-left: 960px;
+    // margin-left: 960px;
     background-color: transparent;
   
   
+       }
+
+
+ .btn{
+        display: flex;
+        align-items: center;
        }

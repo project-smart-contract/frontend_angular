@@ -1,0 +1,27 @@
+{
+    "formule": [
+        {
+            "id": 1,
+            "Nom":"Assur'Auto WW",
+            "Description":"Offrez le meilleur à votre voiture",
+            "Avantages":["Responsabilité civile", "Défense et recours" ],
+            "Options":["Dommages collision", "Dommages collision déplafonnée","Bris de glaces","Tierce accident","Vol", "Incendie","Personnes transportées"]
+        },
+        {
+            "id": 2,
+            "Nom":"Assur'Auto WW",
+            "Description":"Offrez le meilleur à votre voiture",
+            "Avantages":["Responsabilité civile", "Défense et recours" ],
+            "Options":["Dommages collision", "Dommages collision déplafonnée","Bris de glaces","Tierce accident","Vol", "Incendie","Personnes transportées"] 
+        },
+        {
+            "id": 3,
+            "Nom":"Assur'Auto WW",
+            "Description":"Offrez le meilleur à votre voiture",
+            "Avantages":["Responsabilité civile", "Défense et recours" ],
+            "Options":["Dommages collision", "Dommages collision déplafonnée","Bris de glaces","Tierce accident","Vol", "Incendie","Personnes transportées"]
+        }
+
+
+    ]
+}

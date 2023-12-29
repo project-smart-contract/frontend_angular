@@ -1,11 +1,16 @@
+
+
 @for( formule of formules ; track formule.id){
     <div >
-    <h3>{{ formule.id }}</h3>
-    <p>{{ formule.Nom }}</p>
+    <!-- <h3>{{ formule.id }}</h3> -->
+    <h2>{{ formule.Nom }}</h2>
     <p>{{ formule.Description }}</p>
+    <h3>Avantages</h3>
     <p>{{ formule.Avantages}}</p>
+    <h3>Options</h3>
     <p>{{ formule.Options}}</p>
+    <button type="submit" class="details">En savoir plus</button>
     
   </div>}
 
-  <p>hello</p>
+  

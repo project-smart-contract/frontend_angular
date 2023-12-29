@@ -1,0 +1,24 @@
+/* Style pour la liste des formules */
+div {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 22%; /* Ajuste la largeur selon tes besoins pour que quatre éléments tiennent dans une ligne */
+    box-sizing: border-box; /* Pour inclure les bordures et le padding dans la largeur */
+    float: left; /* Pour afficher les éléments en colonnes */
+  }
+  
+  h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  p {
+    margin: 5px 0;
+  }
+  

@@ -2,17 +2,17 @@
     "formule": [
         {
             "id": 1,
-            "Nom":"Assur'Auto WW",
-            "Description":"Offrez le meilleur à votre voiture",
-            "Avantages":["Responsabilité civile", "Défense et recours" ],
-            "Options":["Dommages collision", "Dommages collision déplafonnée","Bris de glaces","Tierce accident","Vol", "Incendie","Personnes transportées"]
+            "Nom":"Assur'Auto",
+            "Description":"une assurance entièrement modulable",
+            "Avantages":["Responsabilité civile" ],
+            "Options":["Protection Juridique", "Incendie","Actes de Vandalisme","Dommages au véhicule","Vol des rétroviseurs", "Rachat de vétusté","Valeur Majorée","Marchandises Transportées"]
         },
         {
             "id": 2,
-            "Nom":"Assur'Auto WW",
-            "Description":"Offrez le meilleur à votre voiture",
-            "Avantages":["Responsabilité civile", "Défense et recours" ],
-            "Options":["Dommages collision", "Dommages collision déplafonnée","Bris de glaces","Tierce accident","Vol", "Incendie","Personnes transportées"] 
+            "Nom":"Assur'Auto Rzana",
+            "Description":"Vous avez plus de 55 ans ?",
+            "Avantages":["Responsabilité civile" ],
+            "Options":["Incendie", "Dommages au véhicule","Actes de Vandalisme","Protection Juridique","Dommages au véhicule « limitée »", "Bris de glace des rétroviseurs","Protection Conducteur et des Passagers","Marchandises Transportées"] 
         },
         {
             "id": 3,
@@ -20,6 +20,41 @@
             "Description":"Offrez le meilleur à votre voiture",
             "Avantages":["Responsabilité civile", "Défense et recours" ],
             "Options":["Dommages collision", "Dommages collision déplafonnée","Bris de glaces","Tierce accident","Vol", "Incendie","Personnes transportées"]
+        },
+        {
+            "id": 4,
+            "Nom":"Assur'Auto Occasion",
+            "Description":"Tout ce qu'il faut pour votre voiture d'occasion",
+            "Avantages":["Responsabilité civile","protections juridiques","Personnes transportées","Pannes mécaniques" ],
+            "Options":["Incendie", "Dommages au véhicule","Actes de Vandalisme","Dommages au véhicule « limitée »", "Bris de glace des rétroviseurs","Tierce accident","Dommages collision","Rachat de vétusté"] 
+        },
+        {
+            "id": 5,
+            "Nom":"Assur’Auto Famille",
+            "Description":"Vous possédez 2 véhicules ou plus dans votre foyer ?",
+            "Avantages":["Responsabilité civile","protections juridiques", "incendie" , "vol"  ],
+            "Options":["Dommages collision", "Rachat de vétusté","Valeur Majorée","Dommages au véhicule","Dommages au véhicule « limitée »"] 
+        },
+        {
+            "id": 6,
+            "Nom":"Assur'Auto Lil Mouaddaf",
+            "Description":"Vous êtes salarié du secteur public ? ",
+            "Avantages":["Responsabilité civile" ],
+            "Options":["Dommages au véhicule « limitée »", "Vol","Protection Conducteur et des Passagers","Dommages collision étendue","Vol des rétroviseurs", "Actes de Vandalisme","Rachat de vétusté","Incendie"] 
+        },
+        {
+            "id": 7,
+            "Nom":"Assur Auto Green",
+            "Description":"L’assurance pour les véhicules hybrides et électriques ",
+            "Avantages":["Responsabilité civile" ],
+            "Options":["Protection Juridique", "Dommages au véhicule","Actes de vandalisme","Valeur Majorée","Marchandises Transportées", "Protection Conducteur et des Passagers","Vol des rétroviseurs","Dommages collision étendue"] 
+        },
+        {
+            "id": 8,
+            "Nom":"Assur'Auto Jeune",
+            "Description":"Pour vous aider à débuter, une couverture de qualité",
+            "Avantages":["Responsabilité civile" ],
+            "Options":["Défense et recours", "Vol","Dommages collision","Bris de glaces","Personnes transportées", "Incendie"] 
         }
 
 

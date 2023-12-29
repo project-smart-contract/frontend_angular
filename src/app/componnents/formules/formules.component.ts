@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Formule } from '../../services/formulesModel';
+import { Formule } from './formulesModel';
 import { FormsModule } from '@angular/forms';
 import * as formulesData from '../../data/formules.json';
 
@@ -19,8 +19,6 @@ export class FormulesComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // Chargez les données à partir du service ou du fichier directement ici
-    // Exemple: this.formules = this.formulesLoaderService.getFormules();
     this.formules = formulesData.formule;
   }
 }

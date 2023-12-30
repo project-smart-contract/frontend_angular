@@ -55,7 +55,51 @@
             "Description":"Pour vous aider à débuter, une couverture de qualité",
             "Avantages":["Responsabilité civile" ],
             "Options":["Défense et recours", "Vol","Dommages collision","Bris de glaces","Personnes transportées", "Incendie"] 
-        }
+        },
+
+
+
+
+
+        {
+            "id": 9,
+            "Nom":"Assur'Auto Entreprise",
+            "Description":"Vous avez entre 4 et 20 véhicules ?",
+            "Avantages":["Responsabilité civile" , "Dommages au véhicule", "Collision", "Bris de glace", "Vol", "Incendie"],
+            "Options":[" des marchandises transportées", "dommages causés aux remorques confiées"] 
+        },
+        {
+            "id": 10,
+            "Nom":"Assur'Auto Taxi",
+            "Description":"Vous êtes un professionnel qui possède un taxi ?",
+            "Avantages":["Responsabilité civile" ,"Personnes transportées"],
+            "Options":["Défense et recours", "Vol","Dommages collision","Bris de glaces", "Incendie"] 
+        },
+        {
+            "id": 11,
+            "Nom":"Assur'Auto Flotte",
+            "Description":"Vous êtes un professionnel qui possède un parc d'au moins cinq véhicules ?",
+            "Avantages":["Responsabilité civile","Protection juridique" ],
+            "Options":["Dommages Collision", "Dommages au véhicule","Vol", "Incendie"] 
+        },
+        {
+            "id": 12,
+            "Nom":"Assur'Auto TPE",
+            "Description":"Vous avez un parc de 1 à 5 véhicules dans le cadre de votre activité ?",
+            "Avantages":["Responsabilité civile","Protection juridique", "incendie" ,"vol","des dommages au véhicule" ,"protection du conducteur et des passagers" ],
+            "Options":["Inondation","Actes de Vandalisme","Valeur Majorée" ] 
+        },
+        {
+            "id": 13,
+            "Nom":"Assur'Auto Poids Lourds",
+            "Description":"Vous êtes chauffeur routier ? Assur’Auto poids lourds est l’assurance qu’il vous faut.",
+            "Avantages":["Responsabilité civile" ,  "dommages au véhicule" ,"bris de glace" ,"vol"  , "incendie" ],
+            "Options":["Inondation","Actes de Vandalisme","Valeur Majorée" ] 
+                }
+
+
+
+
 
 
     ]

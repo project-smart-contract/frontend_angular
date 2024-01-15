@@ -3,11 +3,12 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Formule } from './formulesModel';
 import { FormsModule } from '@angular/forms';
 import * as formulesData from '../../data/formules.json';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-formules',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule,RouterModule],
   templateUrl: './formules.component.html',
   styleUrls: ['./formules.component.scss']
 })

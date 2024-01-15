@@ -1,0 +1,126 @@
+{
+    "detailsFormule": [
+      {
+        "id": 1,
+        "idFormule": 1,
+        "nom": "Assur'Auto",
+        "titre1": "Roulez en toute sérénité avec Assur'Auto, l'assurance auto de Sanlam Maroc",
+        "description1": "Vous cherchez une assurance à la carte ? Sanlam a conçu pour vous Assur’Auto, une assurance entièrement modulable pour répondre au mieux à vos besoins.",
+        "titre2": "Découvrez Assur'Auto",
+        "description2": "Assur’Auto est une assurance entièrement modulable et conçue pour répondre au mieux à vos attentes et à votre budget. Souscrire à Assur’Auto, c’est être assuré de bénéficier de solutions d’assurance sur-mesure et optimales.",
+        "avantages": ["La couverture la plus complète Assur’Auto vous propose des solutions extrêmement riches, avec plus de 20 garanties au choix, allant de la Responsabilité Civile à la Tous Risques. Vous pouvez rouler sereinement, nous vous assurons la meilleure couverture à des tarifs très accessibles.",
+         "Une baisse de prix assurée au moment du renouvellement Grâce au système CRM compagnie, si vous n'avez pas eu de sinistre responsable au cours des 12 derniers mois, vous pouvez bénéficier d'une réduction de tarif sur vos garanties annexes."
+         ,"Appuyez-vous sur Sanlam en toutes circonstances Des services d’assistance et de déclaration de sinistre accessibles 24h/24 et 7j/7 en joignant simplement le 3434.Différentes solutions d’indemnisation possibles, que vous pouvez toutes réaliser depuis l’un de vos Check Auto Express : indemnisation rapide, réparation auprès d’un large réseau de garages agréés de qualité, ou réparation auprès du garage de votre choix."
+         ,"Bénéficiez d'un programme de fidélité exclusif Bénéficiez systématiquement et gratuitement du programme FID'Sanlam, qui vous donne accès toute l'année à des avantages inédits et exclusifs chez nous et auprès de notre réseau de partenaire : de l’entretien de votre véhicule, à votre bien-être, en passant par du mobilier, de la literie, des jouets, des services à domicile, ou encore de l’assurance, profitez d’un monde d’avantages !"],
+        "titre3": "Liste de nos garanties",
+        "description3": "Découvrez tous les risques couverts par nos garanties essentielles et optionnelles. Personnalisez votre contrat auto pour une protection adaptée et optimale.",
+        "options": [2, 3, 5,7,10,6,8,9]
+      },
+      {
+        "id": 2,
+        "idFormule": 2,
+        "nom": "Assur'Auto Rzana",
+        "titre1": "Découvrez les offres d'assurance Assur'Auto Rzana de Sanlam Maroc",
+        "description1": "Vous avez plus de 55 ans ? Sanlam a conçu pour vous Assur’Auto Rzana.",
+        "titre2": "Découvrez Assur'Auto Rzana",
+        "description2": "Vous avez plus de 55 ans ? Vous cherchez une assurance qui vous protège au mieux et qui récompense votre bonne conduite ? Sanlam a conçu pour vous Assur’Auto Rzana , une offre faite sur mesure pour les conducteurs expérimentés.",
+        "avantages": ["Une baisse de prix assurée au moment du renouvellement Grâce au système CRM compagnie, si vous n'avez pas eu de sinistre responsable au cours des 12 derniers mois, vous pouvez bénéficier d'une réduction de tarif sur vos garanties annexes",
+         "Appuyez-vous sur Sanlam en toutes circonstances Des services d’assistance 24h/24 et 7j/7 en joignant simplement le 3434. En cas de sinistre, nous envoyons un constateur pour vous assister. Effectuez l’expertise de votre véhicule sinistré en moins de 20 min dans un de nos 7 centres CAE ou à distance grâce au service d’expertise à distance, et recevez votre indemnisation par chèque ou en cash.",
+         "Une formule adaptée avec deux garanties offertes ! Responsabilité civile.Gratuité de la garantie protection juridique pour défendre vos intérêts et couvrir vos frais d’avocats en cas d’accident.Gratuité de la Protection Conducteur et Passagers, pour vous protéger en tant que conducteur, ainsi que les personnes transportées.",
+         "Et en plus … Bénéficiez d’une formule d’assistance complète au meilleur prix ! Avec Assur’Auto Rzana, vous bénéficiez de la meilleure assistance à prix réduit, en cas d’accident ou en cas de panne."],
+        "options": [5,6,9,12,14,4, 3, 2]
+      },
+      {
+        "id": 3,
+        "idFormule": 3,
+        "nom": "Assur’ Auto WW",
+        "titre1": "Assur’ Auto WW a été conçu pour vous !",
+        "description1": "Vous êtes sur le point d’acquérir un véhicule neuf ? Vous recherchez une couverture optimale pour votre véhicule au meilleur prix? Assur’ Auto WW a été conçu pour vous !",
+        "titre2": "Découvrez l'offre Assur’ Auto WW",
+        "description2": "Protégez votre véhicule neuf en souscrivant à Assur’Auto WW et roulez en toute confiance ! Parce que votre véhicule neuf n’est pas à l’abri d’un accident, d’un bris de glace, d’un vol ou d’un incendie, nous vous offrons un tarif exceptionnel qui vous permet de bénéficier de la couverture la plus complète au meilleur prix.",
+        "avantages": ["Un service différencié en cas de sinistre Vous avez le choix entre 3 formules d’assistance dont la Formule Premium qui vous offre une prise en charge de bout en bout en cas de sinistre, à un prix très accessible. Cette prise comprend notamment un interlocuteur de proximité pour l’ensemble de vos démarches, un constateur facilitateur qui vous accompagne jusqu’à signature du constat, un véhicule avec chauffeur mis à votre disposition sur le lieu de l’accident, un véhicule de remplacement dans les 2 heures qui suivent où que vous soyez, un remorquage de votre véhicule y compris s’il est roulant, une prise en charge fortement accélérée en garage agréé et une assistance à l’étranger.",
+         "Un pack Dommages pour une protection totale de votre véhicule WWVotre véhicule est neuf. Que vous l’ayez financé par fonds propres ou à crédit, il est préférable de l’assurer en tous risques. Avec Assur’Auto WW, vous êtes couverts contre l’incendie, le vol, les bris de glaces et tous les dommages pouvant être subis par votre véhicule, même en cas d’accident responsable !" ,
+         "Un remboursement à neuf en cas de dégâts importants En vous proposant la garantie Valeur majorée, Sanlam peut vous rembourser le prix d’achat de votre véhicule en cas de perte totale ! Cette garantie couvre à la fois les véhicules acquis par financement bancaire et ceux financés en fonds propres et produit ses effets jusqu’à 10 ans après la date de première mise en circulation !", 
+         "Plusieurs garanties au choix à un tarif très avantageuxAvec Assur’Auto WW, vous bénéficiez d’une couverture étendue tout en étant à la carte : vous pouvez souscrire à autant de garanties annexes que vous le souhaitez, avec des niveaux de franchise très intéressants, le tout à un tarif très compétitif."],
+
+         "options": [5,6,9,12,14,4, 3, 2]
+      },
+      {
+        "id": 4,
+        "idFormule": 4,
+        "nom": "Assur’ Auto Occasion",
+        "titre1": "Assur’ Auto Occasion a été conçu pour vous !",
+        "description1": "Vous êtes sur le point d’acquérir un véhicule deuxième main  ? Vous recherchez une couverture optimale pour votre véhicule au meilleur prix? Assur’ Auto Occasion a été conçu pour vous !",
+        "titre2": "Découvrez l'offre Assur’ Auto Occasion",
+        "description2": "Protégez votre véhicule  en souscrivant à Assur’Auto Occasion et roulez en toute confiance ! Parce que votre véhicule  n’est pas à l’abri d’un accident, d’un bris de glace, d’un vol ou d’un incendie, nous vous offrons un tarif exceptionnel qui vous permet de bénéficier de la couverture la plus complète au meilleur prix.",
+        "avantages": ["Responsabilité Civile :L'assurance Assu'Auto Occasion propose une couverture robuste en matière de responsabilité civile. En cas d'accident, cette assurance prend en charge les dommages matériels et corporels causés à des tiers. Cela signifie que vous pouvez conduire en toute confiance, sachant que votre responsabilité financière est couverte en cas d'imprévu, offrant ainsi une protection essentielle pour vous et votre patrimoine financier",
+         "Protection Juridique :La protection juridique intégrée dans l'assurance Assu'Auto Occasion offre une assistance précieuse en cas de litige lié à un accident de la route. Que ce soit pour des questions de responsabilité ou d'indemnisation, cette fonctionnalité garantit que vous disposez du soutien nécessaire pour résoudre les problèmes légaux éventuels. Cela contribue à éviter les complications juridiques et à garantir une résolution équitable des conflits" ,
+         "Personnes Transportées :Assu'Auto Occasion accorde une attention particulière à la sécurité des passagers. Cette assurance offre une couverture étendue pour les personnes transportées, assurant leur protection en cas d'accident. Que vous transportiez des membres de votre famille, des amis ou d'autres passagers, cette fonction garantit une prise en charge adéquate en cas de blessures, offrant une tranquillité d'esprit supplémentaire pendant vos déplacements", 
+         "Pannes Mécaniques :L'assurance Assu'Auto Occasion va au-delà de la simple couverture en cas d'accident en incluant également une protection contre les pannes mécaniques. Cette fonctionnalité couvre les coûts de réparation inattendus liés à des défaillances mécaniques, assurant ainsi une protection financière contre les imprévus mécaniques. Cela permet aux conducteurs de profiter de leurs trajets en sachant que les éventuels problèmes mécaniques seront pris en charge par leur assurance."],
+
+         "options": [8,14,16,13,14,11,3]
+      },
+      {
+        "id": 5,
+        "idFormule": 5,
+        "nom": "Assur’ Auto Famille",
+        "titre1": "Découvrez les offres d'assurance Assur'Auto Famille de Sanlam Maroc",
+        "description1": "Vous possédez 2 véhicules ou plus dans votre foyer ? Assur’Auto Famille est faite pour vous",
+        "titre2": "Découvrez Assur’Auto Famille",
+        "description2": "Vous possédez deux voitures ou plus dans votre famille ? Vous êtes à la recherche d’une assurance complète et au meilleur prix ? Assur’Auto Famille de Sanlam vous offre des avantages exceptionnels à partir de votre 2ème voiture.",
+        "avantages": ["Les meilleurs services d'assistance A partir du deuxième véhicule assuré, un sur classement au niveau des services d'assistance vous est offert gratuitement. Au total ce sont plus de 32 prestations d'assistance qui vous sont proposés !",
+         "Les garanties protections juridiques, incendie et vol offertes ! Assur’Auto Famille vous permet de bénéficier de la gratuité sur plusieurs garanties pour votre deuxième véhicule. Les garanties offertes sont: Protection juridique, Vol, Incendie." ,
+         "Des réductions sur toutes les autres garanties Choisissez librement la couverture la plus appropriée pour chacune de vos voitures et bénéficiez de réductions pouvant aller jusqu’à 2 000 Dhs sur votre deuxième voiture.", 
+         "Plus de véhicules, plus d'avantages !Avec Assur'Auto Famille, plus vous avez de véhicules et plus les avantages sont importants et plus vous faites d'économies. Une moto parmi les véhicules de la famille ? Sanlam a pensé à vous et vous propose la solution la plus complète du marché adaptée à votre moto."],
+
+         "options": [5,6,9,10,14,4, 3, 2]
+      },
+      {
+        "id": 6,
+        "idFormule": 6,
+        "nom": "Assur'Auto Lil Mouaddaf",
+        "titre1": "Découvrez les offres d'assurance Assur'Auto Lil Mouaddaf de Sanlam Maroc",
+        "description1": "Vous êtes salarié du secteur public ? Assur’Auto Lil Mouaddaf est une assurance auto sur-mesure spécialement conçue pour vous.",
+        "titre2": "Découvrez Assur'Auto Lil Mouaddaf",
+        "description2": "Vous êtes salarié du secteur public ? Découvrez Assur’Auto Lil Mouaddaf et profitez d'avantages exclusifs !",
+        "avantages": ["Bénéficiez de la meilleure couverture au meilleur tarif ! Avec la formule spéciale Lil' Mouaddaf, votre véhicule est couvert en cas de vol, d'incendie, de bris de glace, et dommages collision pour un tarif exceptionnel !",
+         "Bénéficiez des mêmes conditions pour toute la famille ! Grâce à notre offre Assur' Auto Lil Mouaddaf, faites bénéficier vos enfants et vos parents de tous les avantages inédits de notre offre. Il vous suffit de fournir un document justifiant le lien de parenté." ,
+         "Des franchises ajustées Avec Assur' Auto Lil Mouaddaf, bénéficiez de niveaux de franchises ajustés et réparez votre véhicule à moindre frais.", 
+         "Le fractionnement de votre prime est également possible Grâce au système de prélèvement à la source, le fractionnement de votre prime est possible sur 11 mois sans aucun frais supplémentaire."],
+
+         "options": [5,6,9,12,14,4, 3, 2]
+      },
+      {
+        "id": 3,
+        "idFormule": 3,
+        "nom": "Assur’ Auto WW",
+        "titre1": "Assur’ Auto WW a été conçu pour vous !",
+        "description1": "Vous êtes sur le point d’acquérir un véhicule neuf ? Vous recherchez une couverture optimale pour votre véhicule au meilleur prix? Assur’ Auto WW a été conçu pour vous !",
+        "titre2": "Découvrez l'offre Assur’ Auto WW",
+        "description2": "Protégez votre véhicule neuf en souscrivant à Assur’Auto WW et roulez en toute confiance ! Parce que votre véhicule neuf n’est pas à l’abri d’un accident, d’un bris de glace, d’un vol ou d’un incendie, nous vous offrons un tarif exceptionnel qui vous permet de bénéficier de la couverture la plus complète au meilleur prix.",
+        "avantages": ["Un service différencié en cas de sinistre Vous avez le choix entre 3 formules d’assistance dont la Formule Premium qui vous offre une prise en charge de bout en bout en cas de sinistre, à un prix très accessible. Cette prise comprend notamment un interlocuteur de proximité pour l’ensemble de vos démarches, un constateur facilitateur qui vous accompagne jusqu’à signature du constat, un véhicule avec chauffeur mis à votre disposition sur le lieu de l’accident, un véhicule de remplacement dans les 2 heures qui suivent où que vous soyez, un remorquage de votre véhicule y compris s’il est roulant, une prise en charge fortement accélérée en garage agréé et une assistance à l’étranger.",
+         "Un pack Dommages pour une protection totale de votre véhicule WWVotre véhicule est neuf. Que vous l’ayez financé par fonds propres ou à crédit, il est préférable de l’assurer en tous risques. Avec Assur’Auto WW, vous êtes couverts contre l’incendie, le vol, les bris de glaces et tous les dommages pouvant être subis par votre véhicule, même en cas d’accident responsable !" ,
+         "Un remboursement à neuf en cas de dégâts importants En vous proposant la garantie Valeur majorée, Sanlam peut vous rembourser le prix d’achat de votre véhicule en cas de perte totale ! Cette garantie couvre à la fois les véhicules acquis par financement bancaire et ceux financés en fonds propres et produit ses effets jusqu’à 10 ans après la date de première mise en circulation !", 
+         "Plusieurs garanties au choix à un tarif très avantageuxAvec Assur’Auto WW, vous bénéficiez d’une couverture étendue tout en étant à la carte : vous pouvez souscrire à autant de garanties annexes que vous le souhaitez, avec des niveaux de franchise très intéressants, le tout à un tarif très compétitif."],
+
+         "options": [5,6,9,12,14,4, 3, 2]
+      },
+      {
+        "id": 3,
+        "idFormule": 3,
+        "nom": "Assur’ Auto WW",
+        "titre1": "Assur’ Auto WW a été conçu pour vous !",
+        "description1": "Vous êtes sur le point d’acquérir un véhicule neuf ? Vous recherchez une couverture optimale pour votre véhicule au meilleur prix? Assur’ Auto WW a été conçu pour vous !",
+        "titre2": "Découvrez l'offre Assur’ Auto WW",
+        "description2": "Protégez votre véhicule neuf en souscrivant à Assur’Auto WW et roulez en toute confiance ! Parce que votre véhicule neuf n’est pas à l’abri d’un accident, d’un bris de glace, d’un vol ou d’un incendie, nous vous offrons un tarif exceptionnel qui vous permet de bénéficier de la couverture la plus complète au meilleur prix.",
+        "avantages": ["Un service différencié en cas de sinistre Vous avez le choix entre 3 formules d’assistance dont la Formule Premium qui vous offre une prise en charge de bout en bout en cas de sinistre, à un prix très accessible. Cette prise comprend notamment un interlocuteur de proximité pour l’ensemble de vos démarches, un constateur facilitateur qui vous accompagne jusqu’à signature du constat, un véhicule avec chauffeur mis à votre disposition sur le lieu de l’accident, un véhicule de remplacement dans les 2 heures qui suivent où que vous soyez, un remorquage de votre véhicule y compris s’il est roulant, une prise en charge fortement accélérée en garage agréé et une assistance à l’étranger.",
+         "Un pack Dommages pour une protection totale de votre véhicule WWVotre véhicule est neuf. Que vous l’ayez financé par fonds propres ou à crédit, il est préférable de l’assurer en tous risques. Avec Assur’Auto WW, vous êtes couverts contre l’incendie, le vol, les bris de glaces et tous les dommages pouvant être subis par votre véhicule, même en cas d’accident responsable !" ,
+         "Un remboursement à neuf en cas de dégâts importants En vous proposant la garantie Valeur majorée, Sanlam peut vous rembourser le prix d’achat de votre véhicule en cas de perte totale ! Cette garantie couvre à la fois les véhicules acquis par financement bancaire et ceux financés en fonds propres et produit ses effets jusqu’à 10 ans après la date de première mise en circulation !", 
+         "Plusieurs garanties au choix à un tarif très avantageuxAvec Assur’Auto WW, vous bénéficiez d’une couverture étendue tout en étant à la carte : vous pouvez souscrire à autant de garanties annexes que vous le souhaitez, avec des niveaux de franchise très intéressants, le tout à un tarif très compétitif."],
+
+         "options": [5,6,9,12,14,4, 3, 2]
+      }
+      
+    ]
+  }
+  

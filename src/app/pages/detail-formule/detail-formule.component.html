@@ -1,0 +1,44 @@
+@if(formuleDetails){
+    <div class="formule-details" >
+    <h2>{{ formuleDetails.nom }}</h2>
+  <h3>{{ formuleDetails.titre1 }}</h3>
+  <p>{{ formuleDetails.description1 }}</p>
+  <h3>{{ formuleDetails.titre2 }}</h3>
+  <p>{{ formuleDetails.description2 }}</p>
+
+  <div class="avantages-options-container">
+    <div class="avantages">
+    <h3>Avantages</h3>
+    <ul>
+      
+        @for( avantage of formuleDetails.avantages ; track avantage.id){
+            <li >{{ avantage }}</li>
+        }
+        
+    </ul>
+
+</div>
+
+
+<div class="options">
+    <ul>
+        <h3>Liste de nos garanties</h3>
+        <p>Découvrez tous les risques couverts par nos garanties essentielles et optionnelles. Personnalisez votre contrat  pour une protection adaptée et optimale.</p>
+      @for(option of optionsDetails ; track option.id){
+        <li>
+          <label class="option-label">
+            <input type="checkbox"  > {{ option.Nom }}
+            <!-- <p class="option-description">{{ option.Description }}</p> -->
+          </label>
+          <p class="option-description">{{ option.Description }}</p>
+          
+        </li>
+    }
+    </ul>
+  </div>
+</div>
+
+<button type="submit" class="details">Demander un contrat</button>
+  </div>
+}
+  

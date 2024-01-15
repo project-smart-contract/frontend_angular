@@ -1,0 +1,117 @@
+{
+    "option":[
+        {
+            "id": 1,
+            "Nom":"Responsabilité civile",
+            "Description":"La responsabilité civile est l'obligation de réparer les dommages causés à autrui. En matière d'assurance auto, il s'agit de réparer les dommages causés par votre voiture  : dégâts matériels, blessures, maladie, décès."
+
+    },
+    {
+        "id": 2,
+        "Nom":"Protection juridique",
+        "Description":"Cette garantie fournit un accompagnement juridique permettant de défendre les intérêts de l’assuré lors d’une éventuelle procédure judiciaire consécutive à un accident de la circulation et d’obtenir la réparation pécuniaire des dommages subis."
+
+},
+    
+{
+    "id": 3,
+    "Nom":"Incendie",
+    "Description":"L'assurance incendie a pour objet de couvrir les dommages causés au véhicule assuré suite à un incendie, un embrasement, une explosion, une simple combustion ou une chute de foudre."
+
+},  
+{
+    "id": 4,
+    "Nom":"Dommages au véhicule « limitée »",
+    "Description":"Cette garantie couvre exactement les mêmes risques que la garantie Dommages au véhicule et ce dans la limite du capital assuré."
+
+},
+{
+    "id": 5,
+    "Nom":"Actes de Vandalisme",
+    "Description":"Cette garantie vous permet de couvrir les dommages subis par le véhicule assuré suite à des actes isolés de vandalisme ou de malveillance."
+
+},
+{
+    "id": 6,
+    "Nom":"Dommages au véhicule",
+    "Description":" Cette garantie couvre les dommages accidentels subis par le véhicule assuré lorsque ces derniers résultent : D’une collision avec un autre véhicule, D’un choc avec un corps fixe ou mobile ,Du renversement du véhicule sans collision préalable ,Des dommages occasionnés par la chute d’objets ou de substances sur le véhicule en stationnement."
+    
+    
+
+},
+{
+    "id": 7,
+    "Nom":"Vol des rétroviseurs",
+    "Description":"La garantie vol des rétroviseurs permet d’être couvert en cas de vol isolé des rétroviseurs du véhicule assuré."
+
+},
+{
+    "id": 8,
+    "Nom":"Rachat de vétusté",
+    "Description":"Cette garantie couvre le montant de la vétusté devant rester à la charge de l’assuré, au titre de la garantie Dommages Tous Risques lorsqu’il s’agit d’un sinistre partiel affectant cette garantie. Lorsqu’il s’agit d’un sinistre où la responsabilité de l’assuré est entièrement ou partiellement engagée, Sanlam s’engage à indemniser, au titre de la garantie « Responsabilité civile », le montant de la vétusté appliquée par la Compagnie adverse dans l’indemnisation de l’assuré, en tenant compte du taux de responsabilité de ce dernier dans la survenance du sinistre."
+
+},
+
+{
+    "id": 9,
+    "Nom":"Marchandises Transportées",
+    "Description":"Cette garantie vous protège contre les dommages matériels survenant, en cours de transport terrestre au Maroc, aux marchandises transportées, et ce suite à un risque couvert (collision du véhicule assuré avec un corps fixe ou mobile, chute d’arbres, vol des marchandises suite à un accident couvert."
+
+},
+{
+    "id": 10,
+    "Nom":"Valeur Majorée",
+    "Description":"La garantie Valeur Majorée permet le versement d’un complément d’indemnité à la suite d’un accident couvert dans le cadre de la garantie « Dommages Tous risques » ou de la garantie « Dommages au véhicule », causant la perte totale du véhicule assuré."
+
+},
+{
+    "id": 11,
+    "Nom":"Dommages collision",
+    "Description":"Cette garantie vous permet d’être indemnisé des dommages subis par votre véhicule, lors d’un accident survenus avec un autre véhicule ou un piéton ou un animal, que vous soyez responsable ou non. Vous avez le choix du capital que vous souhaitez assurer entre 5 000Dhs et 50 000Dhs. Cet accident doit faire l’objet d’un constat."
+
+},
+
+{
+    "id": 12,
+    "Nom":"Protection Conducteur et des Passagers",
+    "Description":" En cas d’accident, la couverture Protection du conducteur et des passagers protège l’assuré ainsi que toutes les personnes transportées gracieusement à bord de son véhicule, et ce indépendamment de sa responsabilité dans la survenance du sinistre. Cette garantie, qui demeure valable également dans le cas où l’assuré est transporté à bord d’un autre véhicule, se propose de couvrir les frais médicaux consécutifs à un accident et de verser un capital en cas de décès ou d’invalidité."
+    
+
+},
+
+{
+    "id": 13,
+    "Nom":"Dommages collision étendue",
+    "Description":"L’assurance dommage collision étendue prend en charge les dommages accidentels subis par le véhicule assuré lorsque ces derniers résultent d’une collision avec : Un véhicule terrestre à moteur, non lié à une voie ferrée, appartenant à un tiers identifié. Un piéton identifié.Un animal dont le propriétaire est identifié et disposant d’un carnet de santé dûment mis à jour par un vétérinaire habilité à Sexercer."
+    
+    
+
+},
+
+{
+    "id": 14,
+    "Nom":"Bris de glace des rétroviseurs",
+    "Description":"Cette garantie prend en charge le bris du miroir des rétroviseurs du véhicule assuré"
+    
+    
+
+},
+{
+    "id": 15,
+    "Nom":"inondation",
+    "Description":"La couverture contre les inondations représente une composante cruciale pour atténuer les risques associés aux événements météorologiques extrêmes. Cette extension de garantie vise à protéger les assurés contre les dommages matériaux consécutifs à l'immersion de leur véhicule dans l'eau due à des inondations. "
+    
+    
+
+},
+{
+    "id": 16,
+    "Nom":"Perte financiere",
+    "Description":"La couverture contre la perte financière constitue une composante stratégique visant à prévenir les conséquences économiques négatives découlant d'un sinistre. Cette extension de garantie offre une protection financière étendue, couvrant les pertes monétaires résultant d'événements tels que le vol du véhicule, des actes de vandalisme, ou d'autres scénarios de pertes totales."
+    
+    
+
+}
+
+]
+}

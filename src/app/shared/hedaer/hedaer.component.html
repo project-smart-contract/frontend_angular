@@ -1,0 +1,58 @@
+
+
+
+<nav [ngStyle]="{'position': display}">
+  <div class="navbar">
+     <!-- -----------------menu icone------------------ -->
+
+    <i class='bx bx-menu'></i>
+    <div class="logo"><a href="#">ASSU<small style="color: brown;">RANCE</small></a></div>
+     <!-- ----------------------------------- -->
+
+            <div class="nav-links">
+        <!-- -------------Logo side bar---------------------- -->
+      <div class="sidebar-logo">
+        <span class="logo-name">Projecto</span>
+        <i class='bx bx-x' ></i>
+      </div>
+     <!-- ----------------------------------- -->
+
+     <ul class="links">
+          
+       <li *ngFor="let item of menuContent">
+          <a [routerLink]="[item.link]" >{{item.label}}</a>
+          <i class='bx bxs-chevron-down htmlcss-arrow arrow' *ngIf="item.subMenu"></i>
+          <ul class="htmlCss-sub-menu sub-menu" *ngIf="item.subMenu">
+            <li *ngFor="let subItem of item.subMenu" [ngClass]="subItem.subMenu ? 'more' : ''">
+              <a [routerLink]="[subItem.link]" *ngIf="!subItem.subMenu">{{subItem.label}}</a>
+
+              <span *ngIf="subItem.subMenu">
+                <a [routerLink]="[subItem.link]">{{subItem.label}}</a><i class='bx bxs-chevron-right arrow more-arrow'></i>
+               </span>
+               <ul *ngIf="subItem.subMenu" class="more-sub-menu sub-menu" >
+                <li *ngFor="let subsubMenu of subItem.subMenu"><a [routerLink]="[subsubMenu.link]">{{subsubMenu.label}}</a></li>
+              </ul>
+
+            </li>
+
+          </ul> 
+       </li>
+
+
+     </ul>
+
+
+
+
+            </div>
+
+            <div class="search-box">
+              <i class='bx bx-search'></i>
+              <div class="input-box">
+                <input type="text" placeholder="Search...">
+              </div>
+            </div>
+
+  </div>
+
+</nav>

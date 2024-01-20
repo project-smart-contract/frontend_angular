@@ -1,15 +1,123 @@
-<p>pack-details works!</p>
 
 
-
-<div *ngFor="let item of pack">
-    <h2>{{item.titre}}</h2>
-    <p>{{item.description}}</p>
-
-    <ul>
-        <li *ngFor="let avg of item.avantages" >{{avg.label}}</li>
-    </ul>
-    <ul>
-        <li *ngFor="let opt of item.options" >{{opt.titre}}</li>
-    </ul>
+<div *ngFor="let item of pack" class="mb-3" style="text-align: center;">
+    <h2 >{{item.titre}}</h2>
 </div>
+
+
+
+<mat-tab-group mat-stretch-tabs="false" mat-align-tabs="center" 
+backgroundColor="primary"
+color="primary">
+
+<!-- ==================================================== -->
+    <mat-tab label="Description">
+       
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+               <div class="alert alert-light" role="alert">
+                    <h4 class="alert-heading"><i class="bi bi-info-circle-fill mx-1 fs-3"></i>Description</h4> 
+                    <div *ngFor="let item of pack">
+                        <p class="col-md-8 fs-5 mx-4">{{item.description}}</p>
+                    </div> 
+                
+                   <hr>
+                 </div>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+   </div>
+
+
+    <mat-divider></mat-divider>
+
+
+    </mat-tab>
+<!-- ================================================================= -->
+
+    <mat-tab label="les options">
+        <div *ngFor="let item of pack">
+    
+
+            <div class="container-fluid mt-3">
+                <div class="row">
+                     <div class="col-md-2"></div>
+                     <div class="col-md-8">
+                        <table-mat [ELEMENT_DATA]=item.options [avantages]=item.avantages></table-mat>
+                        
+                     </div>
+                     <div class="col-md-2"></div>
+                </div>
+            </div>
+        </div>
+        <mat-divider></mat-divider>
+
+    </mat-tab>
+
+    <mat-tab label="les avantages">
+         
+         
+
+        <div class="container-fluid mt-4">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                   <div class="alert alert-light" role="alert">
+                        <h4 class="alert-heading"><i class="bi bi-rocket-takeoff-fill mx-2"></i>Les avantages</h4> 
+                        <div *ngFor="let item of pack"  class="mt-3 mx-5">
+                            <h4 class="mt-3"></h4>  
+                           <mat-list role="list">
+                               <mat-list-item role="listitem" *ngFor="let avg of item.avantages" ><i class="bi bi-record2-fill mx-2"></i>{{avg.label}}</mat-list-item>
+                             </mat-list>
+               
+                       </div>
+                    
+                       <hr>
+                     </div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+       </div>
+
+        <mat-divider></mat-divider>
+
+    </mat-tab>
+
+
+
+    <!-- ===================================== -->
+    <mat-tab label="Utiliser le pack">
+        <div class="container-fluid mt-4">
+             <div class="row">
+                 <div class="col-md-3"></div>
+                 <div class="col-md-6">
+                    <div class="alert alert-light" role="alert">
+                        <!-- <h4 class="alert-heading">Well done!</h4> -->
+                        <h3><b>  Pour utiliser ce pack, veuillez suivre ces étapes :</b></h3>
+                        <ul>
+                            <li>Ajoutez le pack à votre tableau de bord.</li>
+                            <li> Cliquez sur "Utiliser le pack".</li>
+                            <li>Précisez vos options préférées.</li>
+                            <li>Remplissez les informations nécessaires.</li>
+                            <li>Cliquez sur "Créer le contrat".</li>
+                            <li>Connectez-vous à votre compte Metamask.</li>
+                            <li>Payez le prix du contrat.</li>
+                        </ul>
+                        
+                
+                        <hr>
+                        <p class="mb-0"><a href="#" class="alert-link">cliquer ici</a> pour ajouter le pack dans votre espace</p>
+                      </div>
+                 </div>
+                 <div class="col-md-3"></div>
+             </div>
+        </div>
+    </mat-tab>
+    <!-- ==================================== -->
+
+  </mat-tab-group>
+
+
+

@@ -38,9 +38,94 @@ export class PackService {
             "descriptions": "Une option idéale pour une couverture pendant les voyages.",
             "isCheck": true,
             "montantGarantie": "15000",
-            "isOblg": false,
+            "isOblg": true,
             "franchise": 250,
             "prixOption": 65.00
+          },{
+            "titre": "Option Assurance Plus",
+            "descriptions": "Une option complète pour une couverture étendue.",
+            "isCheck": true,
+            "montantGarantie": "7000",
+            "isOblg": false,
+            "franchise": 300,
+            "prixOption": 40.50
+          },{
+            "titre": "Option Sécurité Totale",
+            "descriptions": "Une option offrant une couverture maximale en toutes circonstances.",
+            "isCheck": false,
+            "montantGarantie": "12000",
+            "isOblg": true,
+            "franchise": 200,
+            "prixOption": 75.25
+          },{
+            "titre": "Option Économique",
+            "descriptions": "Une option économique pour une couverture de base.",
+            "isCheck": true,
+            "montantGarantie": "5000",
+            "isOblg": true,
+            "franchise": 150,
+            "prixOption": 30.99
+          },
+          {
+            "titre": "Option Prestige",
+            "descriptions": "Une option de luxe avec des avantages exceptionnels.",
+            "isCheck": false,
+            "montantGarantie": "10000",
+            "isOblg": false,
+            "franchise": 250,
+            "prixOption": 45.75
+          },
+          {
+            "titre": "Option Voyage Plus",
+            "descriptions": "Une option idéale pour une couverture pendant les voyages.",
+            "isCheck": true,
+            "montantGarantie": "8000",
+            "isOblg": false,
+            "franchise": 180,
+            "prixOption": 55.99
+          },
+          {
+            "titre": "Option Santé Premium",
+            "descriptions": "Une option premium pour une couverture santé complète.",
+            "isCheck": true,
+            "montantGarantie": "9500",
+            "isOblg": true,
+            "franchise": 120,
+            "prixOption": 68.50
+          },
+          {
+            "titre": "Option Entreprise Pro",
+            "descriptions": "Une option professionnelle avec des avantages dédiés aux entreprises.",
+            "isCheck": false,
+            "montantGarantie": "11000",
+            "isOblg": true,
+            "franchise": 200,
+            "prixOption": 72.00
+          },{
+            "titre": "Option Famille Sérénité",
+            "descriptions": "Une option idéale pour la protection de toute la famille.",
+            "isCheck": true,
+            "montantGarantie": "6000",
+            "isOblg": false,
+            "franchise": 300,
+            "prixOption": 35.25
+          },{
+            "titre": "Option Jeunesse Dynamique",
+            "descriptions": "Une option dynamique adaptée aux besoins des jeunes.",
+            "isCheck": false,
+            "montantGarantie": "8500",
+            "isOblg": true,
+            "franchise": 250,
+            "prixOption": 60.00
+          },
+          {
+            "titre": "Option Technologie Avancée",
+            "descriptions": "Une option axée sur la technologie pour une protection avancée.",
+            "isCheck": true,
+            "montantGarantie": "7500",
+            "isOblg": false,
+            "franchise": 180,
+            "prixOption": 42.99
           }
         ]
       },

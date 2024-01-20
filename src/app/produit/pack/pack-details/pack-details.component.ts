@@ -3,13 +3,18 @@ import { ActivatedRoute } from '@angular/router';
 import { PackService } from '../../../services/pack.service';
 import { Pack } from '../../../models/Pack';
 import { CommonModule } from '@angular/common';
+import { TableComponent } from "../../../shared/table/table.component";
+import { TabsPackComponent } from "../../../shared/tabs-pack/tabs-pack.component";
+import { MatTabsModule } from '@angular/material/tabs';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatListModule} from '@angular/material/list';
 
 @Component({
-  selector: 'app-pack-details',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './pack-details.component.html',
-  styleUrl: './pack-details.component.scss'
+    selector: 'app-pack-details',
+    standalone: true,
+    templateUrl: './pack-details.component.html',
+    styleUrl: './pack-details.component.scss',
+    imports: [CommonModule, TableComponent, TabsPackComponent , MatTabsModule,MatDividerModule,MatListModule]
 })
 export class PackDetailsComponent implements OnInit ,DoCheck{
     slug:string|null="";

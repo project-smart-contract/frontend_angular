@@ -1,1 +1,15 @@
 <p>pack-details works!</p>
+
+
+
+<div *ngFor="let item of pack">
+    <h2>{{item.titre}}</h2>
+    <p>{{item.description}}</p>
+
+    <ul>
+        <li *ngFor="let avg of item.avantages" >{{avg.label}}</li>
+    </ul>
+    <ul>
+        <li *ngFor="let opt of item.options" >{{opt.titre}}</li>
+    </ul>
+</div>

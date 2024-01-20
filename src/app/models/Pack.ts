@@ -3,10 +3,14 @@ import {Option} from "./Option";
 
 
 export interface Pack {
+    titre:string;
+    description:string;
+    image:string;
     avantages:Avantage[];
-    options:Option[]
+    options:Option[],
+    slug:string;
 }
 
 export interface Avantage {
-     lable: string;
+    label: string;
 }

@@ -23,12 +23,12 @@ export const routes: Routes = [
                  component:PackComponent,
                  children:[
                     {
-                        path:"details-pack/:id",
+                        path:"details-pack/:slug",
                         component:PackDetailsComponent,
                         
                     },
                     {
-                        path:"update-pack/:id",
+                        path:"update-pack/:slug",
                         component:PackDetailsComponent,
                         
                     },
@@ -39,27 +39,7 @@ export const routes: Routes = [
 
                  ]
             },
-            {
-                path:":type",
-                component:PackComponent,
-                children:[
-                   {
-                       path:"details-pack/:id",
-                       component:PackDetailsComponent,
-                       
-                   },
-                   {
-                       path:"update-pack/:id",
-                       component:PackDetailsComponent,
-                       
-                   },
-                    {
-                        path:"add-pack",
-                        component:PackAddComponent
-                    },
-
-                ]
-           }
+           
         ]
     },
 

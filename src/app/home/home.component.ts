@@ -29,20 +29,16 @@ export class HomeComponent implements OnInit{
      },
       
       {
-       label:"About",
+       label:"Découvrez nos offres",
        link:"/",
        subMenu: [
           {
            label:"Enterprise",
-           link:"/",
+           link:"/produits/entreprise",
           },
           {
-           label:"Membership",
-           link:"/",
-          },
-          {
-           label:"Preferred Projecto Program",
-           link:"/",
+           label:"Particulier",
+           link:"/produits/particulier",
           }
        ]
       }

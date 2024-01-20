@@ -20,7 +20,12 @@
      <ul class="links">
           
        <li *ngFor="let item of menuContent">
-          <a [routerLink]="[item.link]" >{{item.label}}</a>
+          <a [routerLink]="[item.link]" > 
+            @if(item.label=="Home"){<i class="bi bi-house-door-fill mx-2"></i>}
+            @else if(item.label=="Mes contrats"){<i class="bi bi-clipboard2-check-fill mx-2"></i>}
+            @else if(item.label=="Packs"){<i class="bi bi-box-seam-fill mx-2"></i>}
+            @else if(item.label=="Transactions"){<i class="bi bi-arrow-down-up mx-2"></i>}
+            {{item.label}}</a>
           <i class='bx bxs-chevron-down htmlcss-arrow arrow' *ngIf="item.subMenu"></i>
           <ul class="htmlCss-sub-menu sub-menu" *ngIf="item.subMenu">
             <li *ngFor="let subItem of item.subMenu" [ngClass]="subItem.subMenu ? 'more' : ''">

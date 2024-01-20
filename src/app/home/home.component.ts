@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit{
         link:"/"
       },{
        label:"Dashboard",
-       link:"/dash"
+       link:"/dashboard"
      },
       
       {

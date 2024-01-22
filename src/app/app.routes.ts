@@ -1,4 +1,3 @@
-import { Contract } from './models/Contract';
 import { Routes } from '@angular/router';
 import { RegistrationComponent } from './pages/registration/registration.component';
 import { LoginComponent } from './pages/login/login.component';
@@ -11,9 +10,7 @@ import { ProduitComponent } from './produit/produit.component';
 import { PackComponent } from './produit/pack/pack.component';
 import { PackAddComponent } from './produit/pack/pack-add/pack-add.component';
 import { PackDetailsComponent } from './produit/pack/pack-details/pack-details.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { EspaceClientComponent } from './dashboard/espace-client/espace-client.component';
-import { ContractComponent } from './dashboard/espace-client/contract/contract.component';
+import { RecommenderFormComponent } from './recommender-form/recommender-form.component';
 
 
 export const routes: Routes = [
@@ -27,12 +24,12 @@ export const routes: Routes = [
                  component:PackComponent,
                  children:[
                     {
-                        path:"details-pack/:slug",
+                        path:"details-pack/:id",
                         component:PackDetailsComponent,
                         
                     },
                     {
-                        path:"update-pack/:slug",
+                        path:"update-pack/:id",
                         component:PackDetailsComponent,
                         
                     },
@@ -43,31 +40,34 @@ export const routes: Routes = [
 
                  ]
             },
-           
+            {
+                path:":type",
+                component:PackComponent,
+                children:[
+                   {
+                       path:"details-pack/:id",
+                       component:PackDetailsComponent,
+                       
+                   },
+                   {
+                       path:"update-pack/:id",
+                       component:PackDetailsComponent,
+                       
+                   },
+                    {
+                        path:"add-pack",
+                        component:PackAddComponent
+                    },
+
+                ]
+           }
         ]
     },
 
-    {
-        path:"dashboard",
-        component:DashboardComponent,
-        children:[
-               {
-
-                 path:"",
-                 component:EspaceClientComponent,
-                 children:[
-                     {
-                         path:"contract",
-                         component:ContractComponent
-                     }
-                 ]
-                
-                }
-        ]
-    },
 
 
- 
+
+
 
 
     { path: 'registration', component: RegistrationComponent },
@@ -76,4 +76,5 @@ export const routes: Routes = [
     { path: 'particulier', component: ParticuProductComponent },
     { path: 'entreprise', component: EntrepProductComponent },
     { path: 'formule/:id', component: DetailFormuleComponent },
+    { path: 'recommendation', component: RecommenderFormComponent },
 ];

@@ -24,18 +24,18 @@
       </div>
      
   
-  @for (option of options; track $index) {
-    <div class="radio-buttons-container">
+
+    <div *ngFor="let option of options; let i = index"  class="radio-buttons-container">
         <div class="radio-button">
-          <input name="radio-group" id="radio2" class="radio-button__input" type="radio"
+          <input name="radio-group"  [id]="'radio' + i" class="radio-button__input" type="radio"
           [(ngModel)]="answer" [value]="option">
-          <label for="radio2" class="radio-button__label">
+          <label [for]="'radio' + i" class="radio-button__label">
             <span class="radio-button__custom"></span>
             {{ option }}
           </label>
         </div>
     </div>
-}
+
   
     </mat-card-content>
   </mat-card>

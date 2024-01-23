@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
@@ -5,7 +6,7 @@ import { MatCardModule } from '@angular/material/card';
 @Component({
   selector: 'app-radio-question',
   standalone: true,
-  imports: [FormsModule, MatCardModule],
+  imports: [CommonModule, FormsModule, MatCardModule],
   templateUrl: './radio-question.component.html',
   styleUrl: './radio-question.component.scss'
 })

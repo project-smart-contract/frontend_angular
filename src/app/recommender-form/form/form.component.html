@@ -2,13 +2,29 @@
   <div class="row">
     <app-step-tracker-icons class="nav"> </app-step-tracker-icons>
     <div class="column">
-      <!-- ADD FIELDS DYNAMICALLY -->
-      <div>
-        <ng-container appDynamicQuestion></ng-container>
+      <div class="loader" [hidden]="!this.questionnaireService.isQuestionnaireComplete()">
+        <h1>Hold on while we are still processing your data </h1>
+        <p>It might take a little while so be patient</p>
+        <div class="hourglassBackground">
+          <div class="hourglassContainer">
+            <div class="hourglassCurves"></div>
+            <div class="hourglassCapTop"></div>
+            <div class="hourglassGlassTop"></div>
+            <div class="hourglassSand"></div>
+            <div class="hourglassSandStream"></div>
+            <div class="hourglassCapBottom"></div>
+            <div class="hourglassGlass"></div>
+          </div>
+        </div>
       </div>
       <button class="btnn btnn-next"
-      (click)="onNextStep()">Next Step</button>
+      (click)="onNextStep()" [hidden]="this.questionnaireService.isQuestionnaireComplete()">Next Step</button>
+
     </div>
   </div>
 
 </div>
+
+
+
+

@@ -26,7 +26,7 @@ export class DashboardComponent implements OnInit {
       
       {
        label:"Mes contrats",
-       link:"/"
+       link:"dashboard/contract"
       }
   ]
   }

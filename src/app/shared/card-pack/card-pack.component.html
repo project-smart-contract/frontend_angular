@@ -1,0 +1,33 @@
+
+<div class="container-fluid px-3 py-5" id="hanging-icons">
+  <h2 class="pb-2 border-bottom">Packs</h2>
+
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" style="justify-content: center;">
+<mat-card class="example-card col d-flex align-items-start mx-2 mystyle" *ngFor="let pack of packs">
+  <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger">
+    Nouveau
+    <span class="visually-hidden">Nouveau</span>
+  </span>
+    <mat-card-header>
+      <mat-card-title>{{pack.titre}}</mat-card-title>
+      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+     
+       
+    </mat-card-header>
+   
+    <hr style="background-color: black;">
+    <mat-card-content>
+      <p>{{pack.description}}</p>
+      <mat-divider></mat-divider>
+    </mat-card-content>
+    <mat-card-actions>
+     
+      
+      <a [routerLink]="['details-pack',pack.slug]"><button mat-button (click)="scrollToTop()">Voire Plus </button></a>
+    </mat-card-actions>
+   </mat-card>
+
+</div>
+
+</div>

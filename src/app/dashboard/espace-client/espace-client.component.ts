@@ -1,4 +1,5 @@
 import { Component, ElementRef } from '@angular/core';
+import { NgModel } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -8,10 +9,12 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './espace-client.component.html',
   styleUrl: './espace-client.component.scss'
 })
+
 export class EspaceClientComponent {
   constructor(private elementRef: ElementRef) {
     
   }
 
+  
 
 }

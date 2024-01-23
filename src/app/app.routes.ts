@@ -14,6 +14,7 @@ import { PackDetailsComponent } from './produit/pack/pack-details/pack-details.c
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { EspaceClientComponent } from './dashboard/espace-client/espace-client.component';
 import { ContractComponent } from './dashboard/espace-client/contract/contract.component';
+import { DocumentComponent } from './dashboard/document/document.component';
 
 
 export const routes: Routes = [
@@ -54,16 +55,16 @@ export const routes: Routes = [
                {
 
                  path:"",
-                 component:EspaceClientComponent,
-                 children:[
-                     {
-                         path:"contract",
-                         component:ContractComponent
-                     }
-                 ]
-                
+                 component:EspaceClientComponent, 
                 }
         ]
+    },{
+        path:"dashboard/contract",
+        component:ContractComponent,
+        
+    },{
+        path:"dashboard/contract/:id",
+        component:DocumentComponent,
     },
 
 

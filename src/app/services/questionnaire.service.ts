@@ -139,9 +139,8 @@ export class QuestionnaireService {
     }
 
     console.log('Sending to API:', object);
-    const res = this.http.post<string>("http://127.0.0.1:5000/get_recommendations", object)
-    console.log(res);
-    return res;
+
+    return this.http.post<string>("http://127.0.0.1:5000/get_recommendations", object);
     
   } 
 }

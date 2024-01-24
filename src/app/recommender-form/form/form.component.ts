@@ -7,6 +7,7 @@ import { TextQuestionComponent } from '../../componnents/text-question/text-ques
 import { NumberQuestionComponent } from '../../componnents/number-question/number-question.component';
 import { RadioQuestionComponent } from '../../componnents/radio-question/radio-question.component';
 import { Router } from '@angular/router';
+import { StockRecommendationsService } from '../../services/stock-recommendations.service';
 
 export interface Response{
   id:number;
@@ -33,6 +34,7 @@ export class FormComponent implements OnInit {
     private injector: Injector,
     private viewContainerRef: ViewContainerRef,
     private router : Router,
+    private stockRecommendationsService : StockRecommendationsService,
   ) {}
 
 
@@ -53,7 +55,22 @@ export class FormComponent implements OnInit {
      if (this.questionnaireService.isQuestionnaireComplete()) {
       // If complete, show a different component and trigger sendToAPI
       this.showCompletionComponent();
-      this.questionnaireService.sendToAPI();
+      this.questionnaireService.getRecommendation().subscribe(
+        (res) => {
+          console.log('Recommendation successfully sent ');
+          console.log(res);
+  
+          // Introduce a delay of 2 seconds (adjust as needed)
+          setTimeout(() => {
+            this.stockRecommendationsService.setRecommendations(res.recommendations);
+            this.router.navigate(['/recommendedPack']);
+          }, 2000); // 2000 milliseconds = 2 seconds
+        },
+        (err) => {
+          console.log('Error');
+          console.log(err);
+        }
+      );
     } else {
       // If not complete, load the next dynamic component
       this.loadDynamicComponent();

@@ -11,6 +11,7 @@ import { PackComponent } from './produit/pack/pack.component';
 import { PackAddComponent } from './produit/pack/pack-add/pack-add.component';
 import { PackDetailsComponent } from './produit/pack/pack-details/pack-details.component';
 import { RecommenderFormComponent } from './recommender-form/recommender-form.component';
+import { RecommendedPacksComponent } from './recommended-packs/recommended-packs.component';
 
 
 export const routes: Routes = [
@@ -77,4 +78,6 @@ export const routes: Routes = [
     { path: 'entreprise', component: EntrepProductComponent },
     { path: 'formule/:id', component: DetailFormuleComponent },
     { path: 'recommendation', component: RecommenderFormComponent },
+    { path: 'recommendedPack', component: RecommendedPacksComponent },
+    
 ];

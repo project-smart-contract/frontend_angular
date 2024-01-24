@@ -24,6 +24,7 @@ export class HedaerComponent {
   constructor(private renderer: Renderer2, private el: ElementRef,private elementRef: ElementRef) {}
 
     ngOnInit(): void {
+      console.log("hello i'm header !")
       if(this.isfixed!==false){
          this.display = "relative"
       }else {

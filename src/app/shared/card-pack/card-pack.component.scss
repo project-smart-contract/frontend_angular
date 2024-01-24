@@ -1,0 +1,11 @@
+.example-card {
+    max-width: 400px;
+  }
+.mystyle:hover {
+  /* Styles for the hover state */
+  background-color: #f9eebf;
+  transition: background-color 1s, color 1s;
+  
+  color: #333;
+  /* Add any other styles you want to apply on hover */
+}

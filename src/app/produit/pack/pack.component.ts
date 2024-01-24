@@ -5,13 +5,14 @@ import { Pack } from '../../models/Pack';
 import { CommonModule, ViewportScroller } from '@angular/common';
 import { Produit } from '../../models/Produit';
 import { HedaerComponent } from "../../shared/hedaer/hedaer.component";
+import { CardPackComponent } from "../../shared/card-pack/card-pack.component";
 
 @Component({
     selector: 'app-pack',
     standalone: true,
     templateUrl: './pack.component.html',
     styleUrl: './pack.component.scss',
-    imports: [RouterOutlet, CommonModule, RouterLink, HedaerComponent]
+    imports: [RouterOutlet, CommonModule, RouterLink, HedaerComponent, CardPackComponent]
 })
 
 

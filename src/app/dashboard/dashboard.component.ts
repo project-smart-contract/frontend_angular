@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HedaerComponent } from "../shared/hedaer/hedaer.component";
 import { RouterOutlet } from '@angular/router';
 
@@ -9,32 +9,28 @@ import { RouterOutlet } from '@angular/router';
     styleUrl: './dashboard.component.scss',
     imports: [HedaerComponent,RouterOutlet]
 })
-export class DashboardComponent {
-  menuContentHeader = [
-    {
-     label:"Home",
-     link:"/"
-    },{
-      label:"Browse Projects",
-      link:"/"
-    },{
-     label:"Dashboard",
-     link:"/dash"
-   },
-    
-    {
-     label:"Découvrez nos offres",
-     link:"/",
-     subMenu: [
-        {
-         label:"Enterprise",
-         link:"/produits/entreprise",
-        },
-        {
-         label:"Particulier",
-         link:"/produits/particulier",
-        }
-     ]
-    }
-]
+export class DashboardComponent implements OnInit {
+  menuContentHeader:any[]=[];
+  ngOnInit(): void {
+    this.menuContentHeader=[
+      {
+       label:"Home",
+       link:"/"
+      },{
+        label:"Packs",
+        link:"/"
+      },{
+       label:"Transactions",
+       link:"/dash"
+     },
+      
+      {
+       label:"Mes contrats",
+       link:"dashboard/contract"
+      }
+  ]
+  }
+
+ 
+   
 }

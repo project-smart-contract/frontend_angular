@@ -24,31 +24,11 @@
   </div>
 
 
- <router-outlet (activate)="onChildRouteActivate($event)"></router-outlet>
-
- <div class="container-fluid px-3 py-5" id="hanging-icons">
-  <h2 class="pb-2 border-bottom">Packs</h2>
-  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-
-    <div class="col d-flex align-items-start  "  *ngFor="let item2 of item.packs">
+ <router-outlet></router-outlet>
 
 
-      <div>
-        <h4 class="fs-2 text-body-emphasis"><i class="bi bi-check2-circle"></i>{{item2.titre}}</h4>
-        <p>{{item2.description}}</p>
-        <ul>
-          <strong>avantages</strong>
-           <li *ngFor="let avg of item2.avantages"><i class="bi bi-caret-right-fill mx-2"></i>{{avg.label}}</li>
-         </ul>
-       
-        
-  <button class="btn btn-link rounded-pill px-3" type="button"> </button>
-  <a style="text-decoration:none;color: black;"  [routerLink]="['details-pack',item2.slug]"> <button class="btn btn-warning  rounded-pill px-3" type="button" (click)="scrollToTop()" >voir plus </button></a>
-  </div>
-  
-    </div>
-  </div>
-</div>
+    <card-pack [packs]=item.packs></card-pack>
+
 
   
 </div>

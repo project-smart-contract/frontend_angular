@@ -45,6 +45,7 @@ export class RecommendedPacksComponent implements OnInit{
       }
 ]
     this.recommendations = this.stockRecommendationsService.getRecommendations();
+    console.log("1=========",this.recommendations)
   }
 
 }

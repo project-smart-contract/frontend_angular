@@ -9,6 +9,7 @@ export class StockRecommendationsService {
 
   setRecommendations(data:any[]){
     this.recommendations = data;
+    console.log("1=========",this.recommendations)
   }
 
   getRecommendations(){

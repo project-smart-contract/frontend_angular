@@ -1,0 +1,32 @@
+
+
+
+<mat-card class="step-one">
+    <mat-card-header>
+      <mat-card-title-group class="title">
+        <mat-card-title role="heading"
+                        aria-level="1">Personal info</mat-card-title>
+        <mat-card-subtitle role="heading"
+                           aria-level="2"
+                           role="heading"
+                           aria-level="2">Please provide the required infos.</mat-card-subtitle>
+      </mat-card-title-group>
+    </mat-card-header>
+    <mat-card-content class="form-controls">
+      <!-- name input -->
+      <div class="input-details">
+        <label for="name">{{ questionText }}</label>
+        @if (false) {
+            <label for="error"
+            id="error"
+            class="error-alert">Name is required</label>
+        }
+      </div>
+      <input type="text"
+             matInput
+             id="name"
+             [(ngModel)]="answer"
+             placeholder="e.g. Stephen King" />
+      
+    </mat-card-content>
+  </mat-card>

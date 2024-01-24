@@ -1,4 +1,3 @@
-import { Contract } from './models/Contract';
 import { Routes } from '@angular/router';
 import { RegistrationComponent } from './pages/registration/registration.component';
 import { LoginComponent } from './pages/login/login.component';
@@ -15,6 +14,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { EspaceClientComponent } from './dashboard/espace-client/espace-client.component';
 import { ContractComponent } from './dashboard/espace-client/contract/contract.component';
 import { DocumentComponent } from './dashboard/document/document.component';
+import { RecommendedPacksComponent } from './recommended-packs/recommended-packs.component';
+import { RecommenderFormComponent } from './recommender-form/recommender-form.component';
+
 
 
 export const routes: Routes = [
@@ -28,12 +30,12 @@ export const routes: Routes = [
                  component:PackComponent,
                  children:[
                     {
-                        path:"details-pack/:slug",
+                        path:"details-pack/:id",
                         component:PackDetailsComponent,
                         
                     },
                     {
-                        path:"update-pack/:slug",
+                        path:"update-pack/:id",
                         component:PackDetailsComponent,
                         
                     },
@@ -44,9 +46,6 @@ export const routes: Routes = [
 
                  ]
             },
-           
-        ]
-    },
 
     {
         path:"dashboard",
@@ -57,6 +56,9 @@ export const routes: Routes = [
                  path:"",
                  component:EspaceClientComponent, 
                 }
+
+                ]
+           }
         ]
     },{
         path:"dashboard/contract",
@@ -68,7 +70,9 @@ export const routes: Routes = [
     },
 
 
- 
+
+
+
 
 
     { path: 'registration', component: RegistrationComponent },
@@ -77,4 +81,7 @@ export const routes: Routes = [
     { path: 'particulier', component: ParticuProductComponent },
     { path: 'entreprise', component: EntrepProductComponent },
     { path: 'formule/:id', component: DetailFormuleComponent },
+    { path: 'recommendation', component: RecommenderFormComponent },
+    { path: 'recommendedPack', component: RecommendedPacksComponent },
+    
 ];

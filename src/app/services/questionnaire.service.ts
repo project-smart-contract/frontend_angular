@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 
 // questionnaire.model.ts
 export interface Question {
@@ -13,6 +15,7 @@ export interface Question {
   providedIn: 'root'
 })
 export class QuestionnaireService {
+  private apiEndpoint = 'http://localhost:5000/get_recommendations';
 
   questionnaire: Question[] = [
     /* 0  */  { id: 'occupation', text: 'What is your occupation?', type: 'text' },
@@ -28,9 +31,7 @@ export class QuestionnaireService {
     /* 10 */  { id: 'www', text: 'do you want to ensure a brand new vehicle or not?', type: 'radio',options: ['yes', 'no'] },
   ];
     
-    
-
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   step = 0;
   currentStep = {
@@ -90,11 +91,14 @@ export class QuestionnaireService {
   isQuestionnaireComplete(): boolean {
     return this.step === this.currentStep.indices.length;
   }
-  sendToAPI(): any {
+  getRecommendation():Observable<any> {
+    this.answers.age=20;
+    this.answers.fullname="Aya test";
+
     // constructing the object i want to send
     const object = { 
-      fullname: null,
-      age: null,
+      fullname: "Aya test",
+      age: 20,
       parent: this.answers.parent,
       occupation: this.answers.occupation,
       www: this.answers.www,
@@ -105,7 +109,7 @@ export class QuestionnaireService {
       number_seats: this.answers.number_seats,
       business_field: this.answers.business_field,
       number_insured_vehicles: this.answers.number_insured_vehicles,
-      timestamp: null,
+      timestamp: new Date().toISOString(),
     };
 
     if (this.answers.vehicle_type=="bus") {
@@ -126,6 +130,7 @@ export class QuestionnaireService {
       object.parent=false;
     }
 
+
     if (this.answers.www=="yes") {
       object.www=true;
     }
@@ -133,14 +138,11 @@ export class QuestionnaireService {
       object.www=false;
     }
 
-    const apiEndpoint = 'your-api-endpoint';
-    const requestData = object;
-
-    // Example using Angular HttpClient
-    // import { HttpClient } from '@angular/common/http';
-    // constructor(private http: HttpClient) {}
-    // this.http.post(apiEndpoint, requestData).subscribe(response => console.log(response));
     console.log('Sending to API:', object);
-  }
+    const res = this.http.post<string>("http://127.0.0.1:5000/get_recommendations", object)
+    console.log(res);
+    return res;
+    
+  } 
 }
 

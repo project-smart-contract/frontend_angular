@@ -18,18 +18,19 @@ export class QuestionnaireService {
   private apiEndpoint = 'http://localhost:5000/get_recommendations';
 
   questionnaire: Question[] = [
-    /* 0  */  { id: 'occupation', text: 'What is your occupation?', type: 'text' },
-    /* 1  */  { id: 'age', text: 'When is your age?', type: 'number' },
-    /* 2  */  { id: 'vehicle_type', text: 'What is your vehicle type?', type: 'radio' , options: ['motorcycle', 'car', 'truck','bus','boat']},
-    /* 3  */  { id: 'vehicle_make', text: 'What is your vehicle make?', type: 'text' },
-    /* 4  */  { id: 'vehicle_model', text: 'What is your vehicle model?', type: 'text' },
-    /* 5  */  { id: 'vehicle_year', text: 'What is your vehicle year?', type: 'number' },
-    /* 6  */  { id: 'number_insured_vehicles', text: 'How many vehicles you want to ensure?', type: 'number' },
-    /* 7  */  { id: 'number_seats', text: 'How many seats you want to ensure?', type: 'number' },
-    /* 8  */  { id: 'business_field', text: 'What is your business field?', type: 'text' },
-    /* 9  */  { id: 'parent', text: 'How would you describe your current living situation?', type: 'radio',options: ['Living with family or children', 'Living alone'] },
-    /* 10 */  { id: 'www', text: 'do you want to ensure a brand new vehicle or not?', type: 'radio',options: ['yes', 'no'] },
+    /* 0  */  { id: 'occupation', text: 'Quelle est votre profession ?', type: 'text' },
+    /* 1  */  { id: 'age', text: 'Quel est votre âge ?', type: 'number' },
+    /* 2  */  { id: 'vehicle_type', text: 'Quel est le type de votre véhicule ?', type: 'radio' , options: ['moto', 'voiture', 'camion', 'autobus', 'bateau']},
+    /* 3  */  { id: 'vehicle_make', text: 'Quelle est la marque de votre véhicule ?', type: 'text' },
+    /* 4  */  { id: 'vehicle_model', text: 'Quel est le modèle de votre véhicule ?', type: 'text' },
+    /* 5  */  { id: 'vehicle_year', text: 'Quelle est l\'année de votre véhicule ?', type: 'number' },
+    /* 6  */  { id: 'number_insured_vehicles', text: 'Combien de véhicules souhaitez-vous assurer ?', type: 'number' },
+    /* 7  */  { id: 'number_seats', text: 'Combien de sièges souhaitez-vous assurer ?', type: 'number' },
+    /* 8  */  { id: 'business_field', text: 'Quel est votre secteur d\'activité ?', type: 'text' },
+    /* 9  */  { id: 'parent', text: 'Comment décririez-vous votre situation actuelle ?', type: 'radio',options: ['Vivre avec la famille ou des enfants', 'Vivre seul(e)'] },
+    /* 10 */  { id: 'www', text: 'Souhaitez-vous assurer un véhicule neuf ou non ?', type: 'radio',options: ['oui', 'non'] },
   ];
+  
     
   constructor(private http: HttpClient) { }
 
@@ -112,29 +113,46 @@ export class QuestionnaireService {
       timestamp: new Date().toISOString(),
     };
 
-    if (this.answers.vehicle_type=="bus") {
+    if (this.answers.vehicle_type=="moto") {
+      object.vehicle_type="motorcycle";
+    }
+    if (this.answers.vehicle_type=="voiture") {
+      object.vehicle_type="car";
+    }
+    if (this.answers.vehicle_type=="camion") {
+      object.vehicle_type="truck";
+    }
+    if (this.answers.vehicle_type=="autobus") {
+      object.vehicle_type="bus";
+    }
+    if (this.answers.vehicle_type=="bateau") {
+      object.vehicle_type="boat";
+    }
+
+
+    if (this.answers.vehicle_type=="autobus") {
       object.number_seats=20;
     }
-    else if (this.answers.vehicle_type=="truck" || this.answers.vehicle_type=="motorcycle") {
+    else if (this.answers.vehicle_type=="camion" || this.answers.vehicle_type=="moto") {
       object.number_seats=2;
     }
-    else if (this.answers.vehicle_type=="car") {
+    else if (this.answers.vehicle_type=="voiture") {
       object.number_seats=5;
     }
 
 
-    if (this.answers.parent=="Living with family or children") {
+    if (this.answers.parent=="Vivre avec la famille ou des enfants") {
       object.parent=true;
     }
-    else if (this.answers.parent=="Living alone") {
+    else if (this.answers.parent=="Vivre seul(e)") {
       object.parent=false;
     }
 
 
-    if (this.answers.www=="yes") {
+    if (this.answers.www=="oui") {
       object.www=true;
     }
-    else if (this.answers.www=="no") {
+    else if (this.answers.www=="non") {
       object.www=false;
     }
 

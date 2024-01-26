@@ -1,4 +1,20 @@
 <app-hedaer [menuContent]="menuContentHeader" [isfixed]="false"></app-hedaer>
 <div style="height: 10rem;"></div>
 
-<h1>{{recommendations}}</h1>
+<div class="container text-center">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+
+        <h1>Packs recommandés pour vous</h1>
+        <h1>{{recommendations}}</h1>
+        @for (item of packs; track $index) {
+            <card-pack [packs]=item.packs></card-pack>
+        }
+
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+
+

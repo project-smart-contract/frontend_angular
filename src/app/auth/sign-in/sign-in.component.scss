@@ -1,21 +1,20 @@
-.modal-sheet .modal-dialog {
-   
-    transition: bottom .75s ease-in-out;
-  }
-  .modal-sheet .modal-footer {
-    padding-bottom: 2rem;
-  }
-  .modal-container {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #fff;
+  
+
   }
 
+.icon{
+  color: gray;
+}
 
-  @media screen and (max-width: 768px) {
-    .modal-sheet .modal-dialog {
-        width: 300px;
-        transition: bottom .75s ease-in-out;
-      }
-  }
+
+.input{
+  border-radius: 90px;
+}
+
+.title{
+  font-weight: 700;
+}
+

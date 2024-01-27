@@ -1,0 +1,99 @@
+mat-form-field{
+    background-color: rgb(248, 247, 247);
+}
+
+.gradient-custom {
+    /* fallback for old browsers */
+    background:#fff;
+    }
+  @media only screen and (max-width:991px){
+    .titre{
+      margin-top: 20px;
+    }
+  }
+  .left-side{
+    margin-left: 20px;
+    width: 90%;
+  }
+  .icon{
+   
+    color: gray;
+    border: #fff 1px solid;
+  }
+  .vide{
+    height: 100px;
+  }
+  .titel{
+  display: block;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  color: #6301e1;
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  }
+  .names{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .telephone{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .country{
+    width: 25%;
+    scrollbar-width: thin;
+  }
+  .number{
+    width: 75%;
+  }
+  .type-acc{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 15px 10px;
+  }
+  .typelbl{
+    display: flex;
+    justify-content: space-between;
+    align-items:start; 
+    font-size: 1.2em !important;
+     margin: 15px 0;
+  }
+  ::ng-deep mat-form-field {
+    background-color: white;
+  }
+  
+  
+  
+  .social-login-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .social-login-buttons button {
+    margin-bottom: 10px;
+  }
+  
+  .fixed-form {
+    position: sticky;
+    top: 40px; /* Adjust this value to set the distance from the top */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a box shadow for the form */
+    padding: 20px;
+    top: 200px; 
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .mat-mdc-form-field + .mat-mdc-form-field {
+    margin-left: 8px;
+  }

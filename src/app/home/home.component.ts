@@ -41,7 +41,15 @@ export class HomeComponent implements OnInit{
            link:"/produits/particulier",
           }
        ]
-      }
+      },
+      {
+        label:"Register",
+        link:"/register"
+       },
+       {
+        label:"Sign In",
+        link:"/signin"
+       }
 ]
   }
 

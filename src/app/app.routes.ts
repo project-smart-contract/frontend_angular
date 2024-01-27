@@ -17,6 +17,8 @@ import { ContractComponent } from './dashboard/espace-client/contract/contract.c
 import { DocumentComponent } from './dashboard/document/document.component';
 import { RecommenderFormComponent } from './recommender-form/recommender-form.component';
 import { RecommendedPacksComponent } from './recommended-packs/recommended-packs.component';
+import { SignInComponent } from './auth/sign-in/sign-in.component';
+import { RegisterComponent } from './auth/register/register.component';
 
 
 export const routes: Routes = [
@@ -68,6 +70,18 @@ export const routes: Routes = [
     },{
         path:"dashboard/contract/:id",
         component:DocumentComponent,
+    },{ 
+        path: 'recommendation', 
+        component: RecommenderFormComponent 
+    },{ 
+        path: 'recommendedPack', 
+        component: RecommendedPacksComponent 
+    },{ 
+        path: 'signin', 
+        component: SignInComponent 
+    },{ 
+        path: 'register', 
+        component: RegisterComponent 
     },
 
 
@@ -80,6 +94,5 @@ export const routes: Routes = [
     { path: 'particulier', component: ParticuProductComponent },
     { path: 'entreprise', component: EntrepProductComponent },
     { path: 'formule/:id', component: DetailFormuleComponent },
-    { path: 'recommendation', component: RecommenderFormComponent },
-    { path: 'recommendedPack', component: RecommendedPacksComponent },
+  
 ];

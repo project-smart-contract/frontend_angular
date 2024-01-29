@@ -523,5 +523,21 @@ export class PackService {
 
     return filteredPacks;
   }
+ 
+  savePackobj : any;
+
+  // save pack
+ savePack(obj:any){
+     this.savePackobj = obj;
+     console.log(this.savePackobj)
+ }
+
+  getSavedPack(){
+    if(this.savePackobj){
+      return this.savePackobj;
+    }
+    
+  }
+ 
 
 }

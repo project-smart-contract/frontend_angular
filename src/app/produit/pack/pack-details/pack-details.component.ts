@@ -1,5 +1,5 @@
 import { Component, DoCheck, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { PackService } from '../../../services/pack.service';
 import { Pack } from '../../../models/Pack';
 import { CommonModule } from '@angular/common';
@@ -19,7 +19,7 @@ import {MatListModule} from '@angular/material/list';
 export class PackDetailsComponent implements OnInit ,DoCheck{
     slug:string|null="";
     pack:Pack[]=[];
-    constructor(private route: ActivatedRoute,private packService:PackService){}
+    constructor(private route: ActivatedRoute,private packService:PackService,private router: Router){}
 
 
   ngDoCheck(): void {
@@ -29,10 +29,19 @@ export class PackDetailsComponent implements OnInit ,DoCheck{
   }
 
 
+  
   ngOnInit(): void {
       this.slug=this.route.snapshot.paramMap.get('slug');
       if(this.slug!==null) this.pack=this.packService.filterPacksBySlug(this.slug);
       console.log(this.pack);
+  }
+
+
+
+
+  saveObj(){
+     this.packService.savePack(this.pack);
+     this.router.navigate(['/tab']);
   }
    
     

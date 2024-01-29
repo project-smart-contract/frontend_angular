@@ -17,6 +17,9 @@ import { ContractComponent } from './dashboard/espace-client/contract/contract.c
 import { DocumentComponent } from './dashboard/document/document.component';
 import { RecommenderFormComponent } from './recommender-form/recommender-form.component';
 import { RecommendedPacksComponent } from './recommended-packs/recommended-packs.component';
+import { WalletComponent } from './wallet/wallet.component';
+import { PersonaliseComponent } from './produit/personalise/personalise.component';
+import { TableSelectionExampleComponent } from './shared/table-selection-example/table-selection-example.component';
 
 
 export const routes: Routes = [
@@ -72,6 +75,10 @@ export const routes: Routes = [
 
 
  
+    {path:"wallet",component:WalletComponent},
+    {path:"personalise" ,component:PersonaliseComponent},
+    {path:"tab",component:TableSelectionExampleComponent},
+
 
 
     { path: 'registration', component: RegistrationComponent },

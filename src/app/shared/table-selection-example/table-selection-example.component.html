@@ -1,0 +1,156 @@
+<app-hedaer [menuContent]="menuContentHeader" [isfixed]="false"></app-hedaer>
+
+<div class="p-5 mb-4 bg-body-tertiary rounded-3 mt-4">
+  <div class="container-fluid py-2">
+    <h1 class="display-5 fw-bold">Personnalisez votre contrat </h1>
+    <p class="col-md-8 fs-4">Vous pouvez choisir les options préférées.</p>
+
+  </div>
+</div>
+<div class="container-fluid">
+
+
+   <div class="row">
+     <div class="col-md-1"></div>
+     <div class="col-md-7">
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8"   style="transition: none !important; box-shadow: none !important;">
+
+        <!-- Checkbox Column -->
+        <ng-container matColumnDef="select">
+          <th mat-header-cell *matHeaderCellDef>
+            <mat-checkbox (change)="$event ? toggleAllRows() : null"
+                          [checked]="selection.hasValue() && isAllSelected()"
+                          [indeterminate]="selection.hasValue() && !isAllSelected()"
+                          [aria-label]="checkboxLabel()">
+            </mat-checkbox>
+          </th>
+          <td mat-cell *matCellDef="let row,let element" >
+            <mat-checkbox [disabled]="!element.isOblg" (click)="$event.stopPropagation()"
+                          (change)="$event ? selection.toggle(row) : null"
+                          [checked]="!element.isOblg?true:selection.isSelected(row)"
+                          [aria-label]="checkboxLabel(row)">
+            </mat-checkbox>
+          </td>
+        </ng-container>
+      
+        <!-- Position Column -->
+        <ng-container matColumnDef="position">
+          <th mat-header-cell *matHeaderCellDef> No. </th>
+           
+          <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+        </ng-container>
+      
+        <!-- Name Column -->
+        <ng-container matColumnDef="titre">
+          <th mat-header-cell *matHeaderCellDef> titre </th>
+          <td mat-cell *matCellDef="let element"> {{element.titre}} </td>
+        </ng-container>
+      
+        <!-- Weight Column -->
+        <ng-container matColumnDef="montantGarantie" >
+          <th mat-header-cell *matHeaderCellDef> montantGarantie </th>
+          <td mat-cell *matCellDef="let element"> {{element.montantGarantie}} </td>
+        </ng-container>
+      
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="franchise">
+          <th mat-header-cell *matHeaderCellDef> franchise </th>
+          <td mat-cell *matCellDef="let element"> {{element.franchise}} </td>
+        </ng-container>
+    
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="prixOption">
+              <th mat-header-cell *matHeaderCellDef> prixOption </th>
+              <td mat-cell *matCellDef="let element"> {{element.prixOption}} </td>
+            </ng-container>
+    
+                <!-- Symbol Column -->
+    
+                <!-- <ng-container matColumnDef="isOblg">
+                  <th mat-header-cell *matHeaderCellDef> isOblg </th>
+                  <td mat-cell *matCellDef="let element"> 
+                    @if(element.isOblg){
+                      <span class="badge bg-success-subtle text-success-emphasis rounded-pill">Facultatif</span>
+                    }@else {
+                     <span class="badge bg-danger-subtle text-danger-emphasis rounded-pill">Obligatoire</span>
+                    
+                    }  
+                </td>
+                </ng-container> -->
+    
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;">
+          <!-- (click)="selection.toggle(row)" -->
+        </tr>
+      </table>
+      
+     </div>
+     <div class="col-md-4">
+      <ul class="list-group mb-3">
+
+        <li class="list-group-item d-flex justify-content-between lh-sm" *ngFor="let item of selection.selected ">
+          <div>
+            <h6 class="my-0">{{item.titre}}
+              @if(item.isOblg){
+                <span class="badge bg-success-subtle text-success-emphasis rounded-pill">Facultatif</span>
+              }@else {
+               <span class="badge bg-danger-subtle text-danger-emphasis rounded-pill">Obligatoire</span>
+              
+              }  
+            
+            </h6>
+            <small class="text-body-secondary">{{item.descriptions}}</small>
+          </div>
+          <span class="text-body-secondary">${{item.prixOption}}</span>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between">
+          <span>Total (USD)</span>
+          <strong>$ {{totalPrixContract}}</strong>
+          <button class="btn btn-primary" (click)="getWallet()"> <i class="bi bi-credit-card-2-back-fill"></i> continuer</button>
+        </li>
+      
+      </ul>
+     </div>
+   </div>
+</div>
+
+   <!-- {{ selection.selected[0].titre}}
+   {{totalPrixContract}} -->
+
+<!--  
+<hr class="mb-4 mt-4">
+   <div class="container-fluid">
+       <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <ul class="list-group mb-3">
+
+            <li class="list-group-item d-flex justify-content-between lh-sm" *ngFor="let item of selection.selected ">
+              <div>
+                <h6 class="my-0">{{item.titre}}
+                  @if(item.isOblg){
+                    <span class="badge bg-success-subtle text-success-emphasis rounded-pill">Facultatif</span>
+                  }@else {
+                   <span class="badge bg-danger-subtle text-danger-emphasis rounded-pill">Obligatoire</span>
+                  
+                  }  
+                
+                </h6>
+                <small class="text-body-secondary">{{item.descriptions}}</small>
+              </div>
+              <span class="text-body-secondary">${{item.prixOption}}</span>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total (USD)</span>
+              <strong>$ {{totalPrixContract}}</strong>
+            </li>
+          
+          </ul>
+        </div>
+        <div class="col-md-3"></div>
+       </div>
+   </div> -->
+
+

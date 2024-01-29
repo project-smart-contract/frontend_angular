@@ -21,6 +21,7 @@ export class PackComponent implements OnInit,DoCheck{
   typeProduit:string|null="";
   produits:Produit[]=[];
   slug:string|null="";
+  
         constructor(private route: ActivatedRoute ,private packService:PackService,private router: Router,private viewportScroller: ViewportScroller){
           this.slug=this.route.snapshot.paramMap.get('slug');
          

@@ -1,3 +1,26 @@
+
+## Lancer les commandes suivantes  :
+- ng serve
+- npx hardhat node
+- npx hardhat run scripts/deploy.js --network localhost
+
+### npx hardhat node :
+Cette commande fait partie de l'environnement de développement Ethereum Hardhat. Elle lance un nœud Ethereum local, vous permettant d'interagir avec une blockchain simulée à des fins de test et de développement.
+### npx hardhat run scripts/deploy.js --network localhost :
+Cette commande utilise Hardhat pour exécuter un script de déploiement (deploy.js) pour des contrats intelligents Ethereum. Le drapeau --network localhost spécifie que le déploiement doit être effectué sur le nœud Ethereum local.
+
+
+
+
+
+
+
+
+
+
+
+
+
 # InsuranceApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.8.

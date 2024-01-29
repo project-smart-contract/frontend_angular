@@ -1,3 +1,7 @@
+## Vue générale :
+![image](https://github.com/project-smart-contract/frontend_angular/assets/120609888/42576107-30a1-407c-8b1f-afaa5ef9250c)
+
+
 # Développement Frontend avec Angular :
 
 Notre équipe a récemment achevé le développement du frontend de notre application en utilisant le puissant framework Angular. Nous avons choisi Angular pour sa structure modulaire et sa capacité à créer des applications web dynamiques et réactives.

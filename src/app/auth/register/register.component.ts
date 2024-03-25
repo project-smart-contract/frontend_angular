@@ -8,6 +8,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { CommonModule } from '@angular/common';
 import { MatInputModule } from '@angular/material/input';
 import { MatRadioModule } from '@angular/material/radio';
+import { User } from '../../models/User';
+import { AuthService } from '../../services/auth.service';
+import { TokenService } from '../../services/token.service';
 
 
 @Component({
@@ -32,13 +35,30 @@ constructor() {}
 
 })
 export class RegisterComponent implements OnInit{
-    @Input() menuContentHeader !:MenuItem[];
+  @Input() menuContentHeader !:MenuItem[];
+  form! : FormGroup;
+  user!: User ;
+  selectedOption: string = 'personel';
+
+  constructor(private _fb: FormBuilder,
+              private authService :AuthService,
+              private token :TokenService
+    ) {
+      this.form = this._fb.group({
+        fullname:'',
+        email:'',
+        password :'',
+        age: 0,
+        numeroSociete:'',
+        numPermis:'',
+        cin:'',
+        numeroTelephone:'',
+  })
+    }
+    
+
 
     ngOnInit(): void {
-        this.myForm = this.fb.group({
-            name: ['', Validators.required],
-            email: ['', [Validators.required, Validators.email]]
-          });
 
         this.menuContentHeader = [
             {
@@ -78,23 +98,54 @@ export class RegisterComponent implements OnInit{
     }
 
 
-    panelOpenState = false;
-  selectedOption: string = 'personel';
+  panelOpenState = false;
+
   
   @Input()
-  myForm!: FormGroup;
-  @Output() submitForm: EventEmitter<any> = new EventEmitter();
-  constructor(private fb: FormBuilder) {}
+  // myForm!: FormGroup;
+  // @Output() submitForm: EventEmitter<any> = new EventEmitter();
 
 
   onSubmit() {
-    if (this.myForm.valid) {
-      // Form submission logic
-      console.log(this.myForm.value);
+    if (this.form.valid) {
+        console.log('Selected Option:', this.selectedOption);
+
+        if (this.selectedOption === 'personel') {
+          this.user = {
+            email: this.form.value.email,
+            password: this.form.value.password,
+            userType: 'personel',
+            fullname: this.form.value.fullname,
+            age: this.form.value.age,
+            numPermis: this.form.value.numPermis,
+            cin: this.form.value.cin,
+            numeroTelephone: this.form.value.numeroTelephone,
+          }
+        } else if (this.selectedOption === 'entreprise') {
+            this.user = {
+              email: this.form.value.email,
+              password: this.form.value.password,
+              userType: 'entreprise',
+              nomSociete: this.form.value.fullname,
+              numeroSociete: this.form.value.numeroSociete,
+          }
+        }
+
+        console.log(this.user);
+        this.authService.signUp(this.user).subscribe({
+          next:(res)=>{ 
+            console.log(res);
+          },
+          error:(err)=>{console.log(err);}
+        })
     }
   }
 
+  
   email = new FormControl('', [Validators.required, Validators.email]);
+
+
+
   hide = true;
   getErrorMessage() {
     if (this.email.hasError('required')) {

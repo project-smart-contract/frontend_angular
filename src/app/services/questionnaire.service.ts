@@ -7,7 +7,7 @@ export interface Question {
   id: string;
   text: string;
   type: 'text' | 'number' | 'radio';
-  options?: string[]; // Only for 'radio' type questions
+  options?: string[]; 
 }
 
 
